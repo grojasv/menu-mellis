@@ -1,0 +1,35 @@
+name: Watch CIDE menu
+
+# Every morning: is there a new menu PDF on the school page? If so, open an issue (assigned to Guille) asking to
+# run /update-menu in Claude Code. No API key here: Claude reads the PDF on Guille's Mac.
+on:
+  schedule:
+    - cron: '0 5 * * *' # 06:00 CET / 07:00 CEST, every day (new months can appear at weekends)
+  workflow_dispatch:
+    inputs:
+      pretend_new:
+        description: 'Test: treat the current PDF as new (opens a [test] issue)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: watch-menu
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check the menu PDF
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/watch-menu.mjs ${{ inputs.pretend_new && '--pretend-new' || '' }}

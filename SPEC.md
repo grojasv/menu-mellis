@@ -141,7 +141,8 @@ Re-check when "Berenars-2027-28.pdf" appears.
 1. ✅ Repo + Pages + static shell with hand-made `2026-10.json` for `general` (0.1.0).
 2. ✅ `/update-menu` command + validator → full October file, all 15 variants (0.2.0). Source format: general in
    full + each variant as differences from a base (`data/src/`), expanded by `scripts/build-month.mjs`.
-3. Watcher Action + issue flow.
+3. ✅ Watcher Action + issue flow (0.3.0): daily at 05:00 UTC, `scripts/watch-menu.mjs`; one open issue at a time,
+   updated if the PDF is replaced again; leftover issues closed once the PDF is processed.
 4. PWA + stale banner + berenars + variant picker. Service worker network-first for all of `data/*.json`
    (incl. `variants.json`); load only the current month and its neighbours instead of every month in `index.json`.
 5. First real run on the November PDF.

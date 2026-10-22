@@ -2,6 +2,11 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [0.3.0] — 2026-10-22
+### Added
+- **Watch CIDE menu** GitHub Action (`.github/workflows/watch-menu.yml`, every day 05:00 UTC + manual run): finds the menu PDF on the school page and, if it isn't in the site yet, opens one `menu-pdf` issue assigned to @grojasv with the link and "run `/update-menu`". The same issue is updated if the school replaces the PDF again; open issues are closed once the PDF is processed. No API key involved.
+- `scripts/watch-menu.mjs` (`--dry-run`, `--pretend-new` to test the issue flow; the manual run has a "pretend new" switch).
+
 ## [0.2.0] — 2026-10-22
 ### Added
 - All 15 October menus (general, Petit CIDE, puréed, diabetic 6R/7R, gluten-, lactose-, egg-, fish- and nut-free combinations, vegetarian), read from every page of the PDF.
