@@ -23,6 +23,13 @@
     loadError: { ca: 'No s’ha pogut carregar el menú.', es: 'No se ha podido cargar el menú.', en: 'Couldn’t load the menu.' },
     fromGeneral: { ca: 'Del menú general', es: 'Del menú general', en: 'From the general menu' },
     pdf: { ca: 'PDF oficial', es: 'PDF oficial', en: 'Official PDF' },
+    install: { ca: 'Instal·la l’app', es: 'Instala la app', en: 'Install the app' },
+    installIos: { ca: 'A l’iPhone: toca Compartir ⬆︎ i després «Afegeix a la pantalla d’inici».',
+      es: 'En el iPhone: toca Compartir ⬆︎ y luego «Añadir a pantalla de inicio».',
+      en: 'On iPhone: tap Share ⬆︎, then “Add to Home Screen”.' },
+    installOther: { ca: 'Obre el menú del navegador (⋮) i tria «Instal·la l’aplicació» o «Afegeix a la pantalla d’inici».',
+      es: 'Abre el menú del navegador (⋮) y elige «Instalar aplicación» o «Añadir a pantalla de inicio».',
+      en: 'Open the browser menu (⋮) and choose “Install app” or “Add to Home screen”.' },
   };
 
   const store = {
@@ -193,6 +200,7 @@
     store.set('menu-mellis.lang', next);
     document.documentElement.lang = next;
     document.querySelectorAll('.langs button').forEach((b) => b.classList.toggle('active', b.dataset.lang === next));
+    renderInstall();
     render(intro ? 'up' : undefined);
   }
 
@@ -238,6 +246,28 @@
   // Tap the twins to make them wiggle.
   const badge = document.querySelector('.brand .twins');
   badge.addEventListener('click', () => { badge.classList.remove('wiggle'); void badge.getBoundingClientRect(); badge.classList.add('wiggle'); });
+
+  // Install as an app. Chrome/Edge/Android hand us beforeinstallprompt; iPhone Safari can't be prompted, so there
+  // (and in browsers without the event) the button shows how to add it by hand. Hidden inside the installed app.
+  const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const inst = { box: $('install'), btn: $('installBtn'), help: $('installHelp') };
+  let installEvent = null;
+  function renderInstall() {
+    inst.box.hidden = standalone;
+    inst.btn.textContent = `📲 ${t(TEXT.install)}`;
+    inst.help.textContent = t(ios ? TEXT.installIos : TEXT.installOther);
+  }
+  window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installEvent = e; });
+  window.addEventListener('appinstalled', () => { inst.box.hidden = true; });
+  inst.btn.addEventListener('click', async () => {
+    if (!installEvent) { inst.help.hidden = !inst.help.hidden; return; }
+    installEvent.prompt();
+    const { outcome } = await installEvent.userChoice;
+    installEvent = null;
+    if (outcome === 'accepted') inst.box.hidden = true;
+  });
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => { /* offline cache is optional */ });
 
   // Back to the right day when the app is reopened on a later date.
   document.addEventListener('visibilitychange', () => {

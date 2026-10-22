@@ -7,7 +7,11 @@
   <meta name="theme-color" content="#ffe9f5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1a1530" media="(prefers-color-scheme: dark)">
   <title>Menú Mellis</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Menú Mellis">
+  <meta name="mobile-web-app-capable" content="yes">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&display=swap">
@@ -33,6 +37,11 @@
   <main id="day" aria-live="polite"></main>
 
   <footer class="foot" id="foot"></footer>
+
+  <div class="install" id="install" hidden>
+    <button class="btn install-btn" id="installBtn" type="button"></button>
+    <p class="install-help" id="installHelp" hidden></p>
+  </div>
 
   <script src="app.js"></script>
 </body>

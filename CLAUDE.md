@@ -25,6 +25,10 @@ The Read tool needs ≤10 pages per PDF, and this Mac has no `pdftoppm`: split i
 ## Small phones
 Today's lunch must be readable at **320×568** without scrolling, and the ‹ › arrows always on screen (sticky day bar). Check 320×568 and 390×844, light and dark, after any UI change.
 
+## App install (PWA)
+- `manifest.webmanifest` + `sw.js` (network-first for everything; the cache is only the offline fallback). Bump `CACHE` in `sw.js` when its `SHELL` list changes.
+- Icons in `icons/` are generated: `node scripts/make-icons.mjs` (same twins drawing as `app.js`; needs uv).
+
 ## Conventions
 - CA / ES / EN for every UI string (`TEXT` in `app.js`).
 - `CHANGELOG.md` (Keep a Changelog + SemVer) updated in the same commit. Monthly data refreshes = patch.

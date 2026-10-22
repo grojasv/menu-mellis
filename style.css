@@ -226,6 +226,12 @@ main.from-up .card h2 > span:first-child { display: inline-block; animation: wig
 }
 .foot a { color: inherit; }
 
+.install { max-width: 560px; margin: 0 auto; padding: 0 16px calc(24px + env(safe-area-inset-bottom)); text-align: center; }
+.install[hidden], .install-help[hidden] { display: none; }
+.install-btn { background: var(--purple); font: inherit; font-weight: 700; cursor: pointer; }
+.install-btn:active { transform: translateY(3px); box-shadow: 0 2px 0 rgb(58 58 92 / 25%); }
+.install-help { margin: 12px auto 0; max-width: 340px; font-size: 14px; color: var(--muted); }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .confetti { display: none; }

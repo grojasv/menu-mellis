@@ -2,6 +2,12 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [0.5.0] — 2026-10-22
+### Added
+- Install as an app: "📲 Install the app" button under the footer (CA/ES/EN). On Android/Chrome/Edge it opens the browser's install prompt; on iPhone (and browsers without a prompt) it shows how to add it by hand (Share → Add to Home Screen). Hidden when already opened as the installed app.
+- `manifest.webmanifest` and app icons with the twins' heads on a plate (`icons/`, built by `scripts/make-icons.mjs`), also used as the favicon and iPhone home-screen icon.
+- Service worker (`sw.js`): network-first, so new months and changes show up immediately; the cache is only used offline.
+
 ## [0.4.0] — 2026-10-22
 ### Changed
 - New look, "Laboratori": the Mellis twins' candy lab from Laboratori Mellis. Twins badge in the header, Fredoka type, chunky outlined cards, one colour per course (starter teal, main orange, side yellow, dessert pink, bread lilac), pink/purple ‹ › buttons, a starry night card for the dinner idea, and the twins cheering on holidays. Light and dark mode; lunch still fits on a 320×568 screen.

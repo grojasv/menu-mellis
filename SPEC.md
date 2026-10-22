@@ -146,7 +146,7 @@ Re-check when "Berenars-2027-28.pdf" appears.
    updated if the PDF is replaced again; leftover issues closed once the PDF is processed. Since 0.3.1 it compares
    the PDF **link** only: cide.es blocks GitHub runners after their first request, so the PDF itself can't be
    downloaded there. A PDF replaced under the same filename isn't detected (so far changes came as new files).
-4. PWA + stale banner + berenars + variant picker. Service worker network-first for all of `data/*.json`
+4. PWA ✅ (0.5.0: install button, manifest, icons, network-first service worker) + stale banner + berenars + variant picker. Service worker network-first for all of `data/*.json`
    (incl. `variants.json`); load only the current month and its neighbours instead of every month in `index.json`.
 5. First real run on the November PDF.
 
