@@ -75,10 +75,11 @@ Run by Claude Code on the Mac, using Guille's normal Claude subscription. Steps:
 | `no-fruits-secs` | MENÚ 5 NO FRUITS SECS |
 | `no-fruits-secs-ou` | MENÚ 5.1 NO FRUITS SECS NI OU |
 | `no-fruits-secs-marisc` | MENÚ 5 NO FRUITS SECS NI MARISC (NI CEFALÒPODES) |
-| `no-fruits-secs-peix` | MENÚ 5.2.1 NO FRUITS SECS NI PEIX NI … (confirm full title on next PDF) |
+| `no-fruits-secs-peix-marisc` | MENÚ 5.2.1 NO FRUITS SECS NI PEIX NI MARISC |
 | `vegetaria` | MENÚ 6 OVO-LACTI-VEGETARIÀ |
 
 (15 ids + the ES page of `general` = 16 pages.) Menu codes aren't unique ("MENÚ 5" twice), hence slugs.
+The list lives in `data/variants.json` (with names in CA/ES/EN).
 
 ## Data — `data/YYYY-MM.json` + `data/index.json`
 
@@ -137,8 +138,9 @@ Re-check when "Berenars-2027-28.pdf" appears.
 - Commits with `4202945+grojasv@users.noreply.github.com`, never the work address.
 
 ## Build order
-1. Repo + Pages + static shell with hand-made `2026-10.json` for `general` (prove the UI).
-2. `/update-menu` command + validator → generate the full October file from the real PDF.
+1. ✅ Repo + Pages + static shell with hand-made `2026-10.json` for `general` (0.1.0).
+2. ✅ `/update-menu` command + validator → full October file, all 15 variants (0.2.0). Source format: general in
+   full + each variant as differences from a base (`data/src/`), expanded by `scripts/build-month.mjs`.
 3. Watcher Action + issue flow.
 4. PWA + stale banner + berenars.
 5. First real run on the November PDF.

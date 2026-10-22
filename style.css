@@ -99,7 +99,8 @@ main.slide-r { animation: slide-r .22s ease-out; }
 .dishes .e { font-size: 28px; line-height: 1; width: 34px; text-align: center; flex: none; }
 .dishes .t { font-size: 19px; padding-top: 2px; }
 .dishes .t small { display: block; font-size: 14px; color: var(--muted); }
-.dishes li.dessert .t { font-size: 16px; color: var(--muted); padding-top: 5px; }
+.dishes li.dessert .t, .dishes li.bread .t { font-size: 16px; color: var(--muted); padding-top: 5px; }
+.card .from { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
 
 .closed { text-align: center; padding: 28px 16px; }
 .closed .big { font-size: 56px; line-height: 1; }

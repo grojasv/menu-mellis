@@ -2,6 +2,17 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [0.2.0] — 2026-10-22
+### Added
+- All 15 October menus (general, Petit CIDE, puréed, diabetic 6R/7R, gluten-, lactose-, egg-, fish- and nut-free combinations, vegetarian), read from every page of the PDF.
+- `/update-menu` Claude Code command: fetch the PDF, split it, read each page, build, validate, commit.
+- `scripts/fetch-menu.mjs` (finds the menu PDF on the school page and says if it was already processed), `scripts/split-pdf.py`, `scripts/build-month.mjs` (expands `data/src/YYYY-MM.json`: general menu + differences per variant) and `scripts/validate.mjs`.
+- `data/variants.json` with the canonical menu ids and their names in CA/ES/EN.
+- Diabetic portion notes and bread under each dish; "From the general menu" under borrowed dinner ideas.
+- `?menu=<id>` URL parameter to view another menu until the picker exists.
+### Changed
+- `data/2026-10.json` is now generated and minified (~14 KB gzipped). The general menu is unchanged.
+
 ## [0.1.0] — 2026-10-22
 ### Added
 - Today card: school lunch (emoji per dish) and the school's dinner idea, with "Today / Tomorrow / Yesterday".

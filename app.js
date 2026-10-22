@@ -2,7 +2,8 @@
 (() => {
   const LANGS = ['ca', 'es', 'en'];
   const LOCALE = { ca: 'ca-ES', es: 'es-ES', en: 'en-GB' };
-  const VARIANT = 'general'; // variant picker comes later (spec step 4)
+  // Variant picker comes later (spec step 4); until then ?menu=<id> (ids in data/variants.json) switches it.
+  const VARIANT = new URLSearchParams(location.search).get('menu') || 'general';
   const SCHOOL_PAGE = 'https://www.cide.es/espai-migdia-menjadors/';
   const TZ = 'Europe/Madrid';
 
@@ -17,7 +18,7 @@
     missing: { ca: 'Aquest menú encara no està carregat.', es: 'Este menú aún no está cargado.', en: 'This menu isn’t loaded yet.' },
     openPdf: { ca: 'Obre el menú oficial', es: 'Abre el menú oficial', en: 'Open the official menu' },
     loadError: { ca: 'No s’ha pogut carregar el menú.', es: 'No se ha podido cargar el menú.', en: 'Couldn’t load the menu.' },
-    general: { ca: 'Menú general', es: 'Menú general', en: 'General menu' },
+    fromGeneral: { ca: 'Del menú general', es: 'Del menú general', en: 'From the general menu' },
     pdf: { ca: 'PDF oficial', es: 'PDF oficial', en: 'Official PDF' },
   };
 
@@ -46,15 +47,18 @@
   const el = { day: $('day'), date: $('date'), rel: $('rel'), prev: $('prev'), next: $('next'), foot: $('foot') };
 
   let days = [];      // sorted [{ key, day, source }]
+  let variantName = null; // { ca, es, en } from data/variants.json
   let pos = 0;        // index into days; days.length = "next month not loaded"
   let today = todayKey();
 
   async function load() {
-    const index = await fetch('data/index.json', { cache: 'no-cache' }).then((r) => r.json());
+    const [index, variants] = await Promise.all(['data/index.json', 'data/variants.json'].map((u) =>
+      fetch(u, { cache: 'no-cache' }).then((r) => r.json())));
+    variantName = (variants.find((v) => v.id === VARIANT) || variants[0]).name;
     const months = await Promise.all(index.months.map((m) =>
       fetch(`data/${m}.json`, { cache: 'no-cache' }).then((r) => r.json())));
     for (const m of months) {
-      const v = m.variants[VARIANT];
+      const v = m.variants[VARIANT] || m.variants.general;
       if (!v) continue;
       for (const [key, day] of Object.entries(v.days)) days.push({ key, day, source: m.source });
     }
@@ -71,7 +75,7 @@
   function dishList(items, withRoles) {
     return `<ul class="dishes">${items.map((c) => `
       <li class="${withRoles ? c.role : ''}"><span class="e" aria-hidden="true">${c.emoji}</span>
-      <span class="t">${esc(t(c.text))}</span></li>`).join('')}</ul>`;
+      <span class="t">${esc(t(c.text))}${c.note ? `<small>${esc(t(c.note))}</small>` : ''}</span></li>`).join('')}</ul>`;
   }
 
   function render(dir) {
@@ -104,10 +108,11 @@
         html += `<section class="card closed"><div class="big">${icon}</div><p>${esc(t(label))}</p></section>`;
       }
       if (day.dinner) {
-        html += `<section class="card dinner"><h2>🌙 ${esc(t(TEXT.dinner))}</h2>${dishList(day.dinner.items, false)}</section>`;
+        const from = day.dinner.fromGeneral ? `<p class="from">${esc(t(TEXT.fromGeneral))}</p>` : '';
+        html += `<section class="card dinner"><h2>🌙 ${esc(t(TEXT.dinner))}</h2>${dishList(day.dinner.items, false)}${from}</section>`;
       }
       el.day.innerHTML = html;
-      el.foot.innerHTML = `${esc(t(TEXT.general))} · <a href="${source.url}" target="_blank" rel="noopener">${esc(t(TEXT.pdf))} ↗</a>`;
+      el.foot.innerHTML = `${esc(t(variantName))} · <a href="${source.url}" target="_blank" rel="noopener">${esc(t(TEXT.pdf))} ↗</a>`;
     }
 
     if (dir) {

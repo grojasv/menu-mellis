@@ -1,0 +1,3865 @@
+{
+ "month": "2026-10",
+ "source": {
+  "url": "https://www.cide.es/wp-content/uploads/2026/09/Menu-octubre-modificat.pdf",
+  "sha256": "acbf8dcced658e8d14a1453707d8d0633a500248290bd1c5ab3363502f66141b",
+  "processedAt": "2026-10-22T16:00:00+02:00"
+ },
+ "general": {
+  "2026-10-01": {
+   "lunch": {
+    "first": {
+     "ca": "Ensalada de lletuga, tomàtiga, blat de les índies i formatge fresc",
+     "es": "Ensalada de lechuga, tomate, maíz y queso fresco",
+     "en": "Lettuce, tomato, sweetcorn and fresh cheese salad",
+     "a": [
+      7
+     ]
+    },
+    "second": {
+     "ca": "Canelons de pollastre i porc",
+     "es": "Canelones de pollo y cerdo",
+     "en": "Chicken and pork cannelloni",
+     "a": [
+      1,
+      3,
+      6,
+      7
+     ]
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Salmó al forn acompanyat de verdures i patata",
+     "es": "Salmón al horno acompañado de verduras y patata",
+     "en": "Oven-baked salmon with vegetables and potato"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-02": {
+   "lunch": {
+    "first": {
+     "ca": "Ensaladilla casolana (pastanaga, pèsols, mongeta verda, patata, ou bullit, tonyina i maionesa)",
+     "es": "Ensaladilla casera (zanahoria, guisantes, judía verde, patata, huevo cocido, atún y mayonesa)",
+     "en": "Homemade Russian salad (carrot, peas, green beans, potato, boiled egg, tuna and mayonnaise)",
+     "a": [
+      3,
+      4,
+      7
+     ]
+    },
+    "second": {
+     "ca": "Lluç a la planxa",
+     "es": "Merluza a la plancha",
+     "en": "Grilled hake",
+     "a": [
+      4
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, olives i pinya",
+     "es": "Ensalada de lechuga, aceitunas y piña",
+     "en": "Lettuce, olive and pineapple salad"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Crema de carabassa",
+     "es": "Crema de calabaza",
+     "en": "Pumpkin soup"
+    },
+    {
+     "ca": "Truita de xampinyons",
+     "es": "Tortilla de champiñones",
+     "en": "Mushroom omelette",
+     "a": [
+      3
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-05": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de ciurons amb verdures",
+     "es": "Potaje de garbanzos con verduras",
+     "en": "Chickpea and vegetable stew"
+    },
+    "second": {
+     "ca": "Pitrera de pollastre a la planxa",
+     "es": "Pechuga de pollo a la plancha",
+     "en": "Grilled chicken breast"
+    },
+    "side": {
+     "ca": "Patates al vapor",
+     "es": "Patatas al vapor",
+     "en": "Steamed potatoes"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Carabassons farcits de verdura i tonyina acompanyats d'ensalada variada (brots tendres, tomàtiga cherry i pastanaga) amb quinoa",
+     "es": "Calabacines rellenos de verdura y atún acompañados de ensalada variada (brotes tiernos, tomate cherry y zanahoria) con quinoa",
+     "en": "Courgettes stuffed with vegetables and tuna, with mixed salad (baby leaves, cherry tomato and carrot) and quinoa"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-06": {
+   "lunch": {
+    "first": {
+     "ca": "Macarrons amb salsa de tomàtiga i verdures",
+     "es": "Macarrones con salsa de tomate y verduras",
+     "en": "Macaroni with tomato and vegetable sauce",
+     "a": [
+      1,
+      3
+     ]
+    },
+    "second": {
+     "ca": "Lluç a la planxa amb maionesa casolana",
+     "es": "Merluza a la plancha con mayonesa casera",
+     "en": "Grilled hake with homemade mayonnaise",
+     "a": [
+      4,
+      7
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, pastanaga i tomàtiga",
+     "es": "Ensalada de lechuga, zanahoria y tomate",
+     "en": "Lettuce, carrot and tomato salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Crema de verdures",
+     "es": "Crema de verduras",
+     "en": "Vegetable soup"
+    },
+    {
+     "ca": "Remenat d'ou amb tomàtiga",
+     "es": "Huevos revueltos con tomate",
+     "en": "Scrambled eggs with tomato",
+     "a": [
+      3
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-07": {
+   "lunch": {
+    "first": {
+     "ca": "Arròs brut o gaspatxo casolà",
+     "es": "Arroz brut o gazpacho casero",
+     "en": "Arròs brut (Mallorcan rice stew) or homemade gazpacho"
+    },
+    "second": {
+     "ca": "Truita de patates amb ceba",
+     "es": "Tortilla de patatas con cebolla",
+     "en": "Potato and onion omelette",
+     "a": [
+      3
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, cogombre, blat de les índies i olives",
+     "es": "Ensalada de lechuga, pepino, maíz y aceitunas",
+     "en": "Lettuce, cucumber, sweetcorn and olive salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Sopa de verdures amb pasta integral",
+     "es": "Sopa de verduras con pasta integral",
+     "en": "Vegetable soup with wholewheat pasta",
+     "a": [
+      1
+     ]
+    },
+    {
+     "ca": "Pitrera d'indiot a la planxa",
+     "es": "Pechuga de pavo a la plancha",
+     "en": "Grilled turkey breast"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-08": {
+   "lunch": {
+    "first": {
+     "ca": "Ensalada de mongetes blanques (tomàtiga, ceba, pastanaga i pebre verd)",
+     "es": "Ensalada de judías blancas (tomate, cebolla, zanahoria y pimiento verde)",
+     "en": "White bean salad (tomato, onion, carrot and green pepper)"
+    },
+    "second": {
+     "ca": "Estofat de vedella o de pollastre",
+     "es": "Estofado de ternera o de pollo",
+     "en": "Beef or chicken stew"
+    },
+    "side": {
+     "ca": "Arròs integral pilaf",
+     "es": "Arroz integral pilaf",
+     "en": "Brown rice pilaf"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Gaspatxo",
+     "es": "Gazpacho",
+     "en": "Gazpacho"
+    },
+    {
+     "ca": "Truita de patates i espinacs",
+     "es": "Tortilla de patatas y espinacas",
+     "en": "Potato and spinach omelette",
+     "a": [
+      3
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-09": {
+   "lunch": {
+    "first": {
+     "ca": "Crema de carabassa amb crostons al forn o sopes mallorquines",
+     "es": "Crema de calabaza con crostones al horno o sopas mallorquinas",
+     "en": "Pumpkin soup with baked croutons or sopes mallorquines (Mallorcan bread and vegetable soup)",
+     "a": [
+      1
+     ]
+    },
+    "second": {
+     "ca": "Lluç arrebossat casolà",
+     "es": "Merluza empanada casera",
+     "en": "Homemade breaded hake",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga i tomàtiga",
+     "es": "Ensalada de lechuga y tomate",
+     "en": "Lettuce and tomato salad"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Pollastre al curry amb xampinyons acompanyat d'arròs",
+     "es": "Pollo al curry con champiñones acompañado de arroz",
+     "en": "Chicken curry with mushrooms and rice"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-12": {
+   "status": "holiday"
+  },
+  "2026-10-13": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de llenties amb verdures",
+     "es": "Potaje de lentejas con verduras",
+     "en": "Lentil and vegetable stew"
+    },
+    "second": {
+     "ca": "Lluç arrebossat casolà",
+     "es": "Merluza empanada casera",
+     "en": "Homemade breaded hake",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, cogombre, blat de les índies i pinya",
+     "es": "Ensalada de lechuga, pepino, maíz y piña",
+     "en": "Lettuce, cucumber, sweetcorn and pineapple salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Wrap a la planxa amb truita, carabassó, espinacs i tomàtiga",
+     "es": "Wrap a la plancha con tortilla, calabacín, espinacas y tomate",
+     "en": "Grilled wrap with omelette, courgette, spinach and tomato",
+     "a": [
+      1,
+      3
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-14": {
+   "lunch": {
+    "first": {
+     "ca": "Arròs de brou de peix i marisc",
+     "es": "Arroz caldoso de pescado y marisco",
+     "en": "Brothy fish and seafood rice",
+     "a": [
+      2,
+      4,
+      14
+     ]
+    },
+    "second": {
+     "ca": "Contracuixa de pollastre al forn",
+     "es": "Contramuslo de pollo al horno",
+     "en": "Oven-baked chicken thigh"
+    },
+    "side": {
+     "ca": "Tomàtiga trempada",
+     "es": "Tomate aliñado",
+     "en": "Dressed tomato salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Bullit de rap (amb patata, mongetes tendres, bròquil i pastanaga)",
+     "es": "Bullit de rape (con patata, judías verdes, brócoli y zanahoria)",
+     "en": "Poached monkfish (with potato, green beans, broccoli and carrot)",
+     "a": [
+      4
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-15": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de ciurons amb verdures",
+     "es": "Potaje de garbanzos con verduras",
+     "en": "Chickpea and vegetable stew"
+    },
+    "second": {
+     "ca": "Lluç a la planxa amb salsa de tomàtiga i pebres",
+     "es": "Merluza a la plancha con salsa de tomate y pimientos",
+     "en": "Grilled hake with tomato and pepper sauce",
+     "a": [
+      4
+     ]
+    },
+    "side": {
+     "ca": "Patates al vapor",
+     "es": "Patatas al vapor",
+     "en": "Steamed potatoes"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Truita de patata, ceba i colflori acompanyada d'ensalada variada (canonges, tomàtiga, alvocat i pastanaga)",
+     "es": "Tortilla de patata, cebolla y coliflor acompañada de ensalada variada (canónigos, tomate, aguacate y zanahoria)",
+     "en": "Potato, onion and cauliflower omelette with mixed salad (lamb's lettuce, tomato, avocado and carrot)",
+     "a": [
+      3
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-16": {
+   "lunch": {
+    "first": {
+     "ca": "Macarrons a la bolonyesa",
+     "es": "Macarrones a la boloñesa",
+     "en": "Macaroni bolognese",
+     "a": [
+      1,
+      3
+     ]
+    },
+    "second": {
+     "ca": "Truita de patates",
+     "es": "Tortilla de patatas",
+     "en": "Potato omelette",
+     "a": [
+      3
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, pastanaga i olives",
+     "es": "Ensalada de lechuga, zanahoria y aceitunas",
+     "en": "Lettuce, carrot and olive salad"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Salmó a la planxa acompanyat de gírgoles a la planxa i quinoa",
+     "es": "Salmón a la plancha acompañado de setas de cardo a la plancha y quinoa",
+     "en": "Grilled salmon with grilled oyster mushrooms and quinoa",
+     "a": [
+      4
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-19": {
+   "status": "no-classes",
+   "dinner": [
+    {
+     "ca": "Crema de xampinyons",
+     "es": "Crema de champiñones",
+     "en": "Mushroom soup"
+    },
+    {
+     "ca": "Truita a la francesa",
+     "es": "Tortilla francesa",
+     "en": "Plain omelette",
+     "a": [
+      3
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-20": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de llenties amb verdures",
+     "es": "Potaje de lentejas con verduras",
+     "en": "Lentil and vegetable stew"
+    },
+    "second": {
+     "ca": "Lluç arrebossat casolà",
+     "es": "Merluza empanada casera",
+     "en": "Homemade breaded hake",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, blat de les índies i olives",
+     "es": "Ensalada de lechuga, maíz y aceitunas",
+     "en": "Lettuce, sweetcorn and olive salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Espaguetis integrals amb salsa de tomàtiga i carabassa rostida amb ametlles i formatge feta",
+     "es": "Espaguetis integrales con salsa de tomate y calabaza asada con almendras y queso feta",
+     "en": "Wholewheat spaghetti with tomato sauce, roasted pumpkin, almonds and feta",
+     "a": [
+      1,
+      7,
+      8
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-21": {
+   "lunch": {
+    "first": {
+     "ca": "Macarrons integrals amb salsa de tomàtiga i verdures",
+     "es": "Macarrones integrales con salsa de tomate y verduras",
+     "en": "Wholewheat macaroni with tomato and vegetable sauce",
+     "a": [
+      1,
+      3
+     ]
+    },
+    "second": {
+     "ca": "Truita de patates amb ceba",
+     "es": "Tortilla de patatas con cebolla",
+     "en": "Potato and onion omelette",
+     "a": [
+      3
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, tomàtiga, pastanaga i cogombre",
+     "es": "Ensalada de lechuga, tomate, zanahoria y pepino",
+     "en": "Lettuce, tomato, carrot and cucumber salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Albergínies farcides de soja texturitzada acompanyades de tomàtiga trempada i moniato rostit",
+     "es": "Berenjenas rellenas de soja texturizada acompañadas de tomate aliñado y boniato asado",
+     "en": "Aubergines stuffed with textured soy, with dressed tomato and roast sweet potato",
+     "a": [
+      6
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-22": {
+   "lunch": {
+    "first": {
+     "ca": "Crema de carabassó amb crostons al forn",
+     "es": "Crema de calabacín con crostones al horno",
+     "en": "Courgette soup with baked croutons",
+     "a": [
+      1
+     ]
+    },
+    "second": {
+     "ca": "Pitrera de pollastre a la planxa",
+     "es": "Pechuga de pollo a la plancha",
+     "en": "Grilled chicken breast"
+    },
+    "side": {
+     "ca": "Arròs integral pilaf",
+     "es": "Arroz integral pilaf",
+     "en": "Brown rice pilaf"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Tumbet de llom (amb patata, albergínia, carabassó, pebre vermell i salsa de tomàtiga)",
+     "es": "Tumbet de lomo (con patata, berenjena, calabacín, pimiento rojo y salsa de tomate)",
+     "en": "Pork loin tumbet (with potato, aubergine, courgette, red pepper and tomato sauce)"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-23": {
+   "lunch": {
+    "first": {
+     "ca": "Ciurons amb trempó",
+     "es": "Garbanzos con trempó",
+     "en": "Chickpeas with trempó (Mallorcan tomato, pepper and onion salad)"
+    },
+    "second": {
+     "ca": "Pilotes casolanes de vedella i porc",
+     "es": "Albóndigas caseras de ternera y cerdo",
+     "en": "Homemade beef and pork meatballs",
+     "a": [
+      1,
+      3
+     ]
+    },
+    "side": {
+     "ca": "Pastanaga al vapor",
+     "es": "Zanahoria al vapor",
+     "en": "Steamed carrots"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Wrap d'espinacs amb salmó fumat, formatge i tomàtiga",
+     "es": "Wrap de espinacas con salmón ahumado, queso y tomate",
+     "en": "Spinach wrap with smoked salmon, cheese and tomato",
+     "a": [
+      1,
+      4,
+      7
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-26": {
+   "lunch": {
+    "first": {
+     "ca": "Caracolas a la carbonara",
+     "es": "Caracolas a la carbonara",
+     "en": "Pasta shells carbonara",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      9
+     ]
+    },
+    "second": {
+     "ca": "Pitrera de pollastre a la planxa",
+     "es": "Pechuga de pollo a la plancha",
+     "en": "Grilled chicken breast"
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, tomàtiga i ceba vermella",
+     "es": "Ensalada de lechuga, tomate y cebolla roja",
+     "en": "Lettuce, tomato and red onion salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Crema de verdures",
+     "es": "Crema de verduras",
+     "en": "Vegetable soup"
+    },
+    {
+     "ca": "Salmó a la planxa",
+     "es": "Salmón a la plancha",
+     "en": "Grilled salmon",
+     "a": [
+      4
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-27": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de llenties amb verdures",
+     "es": "Potaje de lentejas con verduras",
+     "en": "Lentil and vegetable stew"
+    },
+    "second": {
+     "ca": "Truita de patates amb ceba",
+     "es": "Tortilla de patatas con cebolla",
+     "en": "Potato and onion omelette",
+     "a": [
+      3
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, cogombre, pinya i olives",
+     "es": "Ensalada de lechuga, pepino, piña y aceitunas",
+     "en": "Lettuce, cucumber, pineapple and olive salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Arròs saltejat amb verdures (bròquil, ceba i pastanaga) amb gambes",
+     "es": "Arroz salteado con verduras (brócoli, cebolla y zanahoria) y gambas",
+     "en": "Stir-fried rice with vegetables (broccoli, onion and carrot) and prawns",
+     "a": [
+      2
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-28": {
+   "lunch": {
+    "first": {
+     "ca": "Sopa de bullit amb pasta integral",
+     "es": "Sopa de cocido con pasta integral",
+     "en": "Meat broth soup with wholewheat pasta",
+     "a": [
+      1,
+      3,
+      9
+     ]
+    },
+    "second": {
+     "ca": "Lluç arrebossat casolà",
+     "es": "Merluza empanada casera",
+     "en": "Homemade breaded hake",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+     ]
+    },
+    "side": {
+     "ca": "Minestra de verdures",
+     "es": "Menestra de verduras",
+     "en": "Mixed vegetable medley"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Hamburguesa casolana de vedella acompanyada de verdures rostides (pebres, albergínia i carabassó) i moniato",
+     "es": "Hamburguesa casera de ternera acompañada de verduras asadas (pimientos, berenjena y calabacín) y boniato",
+     "en": "Homemade beef burger with roast vegetables (peppers, aubergine and courgette) and sweet potato"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-29": {
+   "lunch": {
+    "first": {
+     "ca": "Ensalada de ciurons (tomàtiga, pebre verd, ceba vermella i olives)",
+     "es": "Ensalada de garbanzos (tomate, pimiento verde, cebolla roja y aceitunas)",
+     "en": "Chickpea salad (tomato, green pepper, red onion and olives)"
+    },
+    "second": {
+     "ca": "Estofat d'indiot amb verdures",
+     "es": "Estofado de pavo con verduras",
+     "en": "Turkey and vegetable stew"
+    },
+    "side": {
+     "ca": "Patates al vapor",
+     "es": "Patatas al vapor",
+     "en": "Steamed potatoes"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Quiche de porros acompanyada d'ensalada de tomàtiga i cogombre",
+     "es": "Quiche de puerros acompañada de ensalada de tomate y pepino",
+     "en": "Leek quiche with tomato and cucumber salad",
+     "a": [
+      1,
+      3,
+      7
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-10-30": {
+   "lunch": {
+    "first": {
+     "ca": "Paella de pollastre, porc i verdures",
+     "es": "Paella de pollo, cerdo y verduras",
+     "en": "Chicken, pork and vegetable paella"
+    },
+    "second": {
+     "ca": "Raoles casolanes de lluç i calamar a la planxa",
+     "es": "Raolas caseras de merluza y calamar a la plancha",
+     "en": "Homemade hake and squid patties (raoles), grilled",
+     "a": [
+      1,
+      3,
+      4,
+      14
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga i tomàtiga",
+     "es": "Ensalada de lechuga y tomate",
+     "en": "Lettuce and tomato salad"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Ous a la planxa amb patates fregides acompanyats de verdures a la planxa",
+     "es": "Huevos a la plancha con patatas fritas acompañados de verduras a la plancha",
+     "en": "Fried eggs with chips and grilled vegetables",
+     "a": [
+      3
+     ]
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  }
+ },
+ "variants": {
+  "petit-cide": {
+   "base": "general",
+   "dinner": "page",
+   "days": {
+    "2026-10-02": {
+     "lunch": {
+      "first": {
+       "ca": "Ensaladilla casolana (pastanaga, mongeta verda, patata i maionesa)",
+       "es": "Ensaladilla casera (zanahoria, judía verde, patata y mayonesa)",
+       "en": "Homemade Russian salad (carrot, green beans, potato and mayonnaise)",
+       "a": [
+        7
+       ]
+      },
+      "side": {
+       "ca": "Ensalada de lletuga i pinya",
+       "es": "Ensalada de lechuga y piña",
+       "en": "Lettuce and pineapple salad"
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "second": {
+       "ca": "Lluç a la planxa",
+       "es": "Merluza a la plancha",
+       "en": "Grilled hake",
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-07": {
+     "lunch": {
+      "first": {
+       "ca": "Arròs amb verduretes",
+       "es": "Arroz con verduritas",
+       "en": "Rice with vegetables"
+      },
+      "side": {
+       "ca": "Ensalada de lletuga, cogombre i blat de les índies",
+       "es": "Ensalada de lechuga, pepino y maíz",
+       "en": "Lettuce, cucumber and sweetcorn salad"
+      }
+     }
+    },
+    "2026-10-08": {
+     "lunch": {
+      "first": {
+       "ca": "Ensalada de mongetes blanques i tomàtiga",
+       "es": "Ensalada de judías blancas y tomate",
+       "en": "White bean and tomato salad"
+      },
+      "second": {
+       "ca": "Estofat de pollastre",
+       "es": "Estofado de pollo",
+       "en": "Chicken stew"
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de carabassa",
+       "es": "Crema de calabaza",
+       "en": "Pumpkin soup"
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "side": {
+       "ca": "Ensalada de lletuga i pastanaga",
+       "es": "Ensalada de lechuga y zanahoria",
+       "en": "Lettuce and carrot salad"
+      }
+     }
+    },
+    "2026-10-14": {
+     "lunch": {
+      "first": {
+       "ca": "Arròs amb verduretes",
+       "es": "Arroz con verduritas",
+       "en": "Rice with vegetables"
+      },
+      "second": {
+       "ca": "Contracuixa de pollastre a la planxa",
+       "es": "Contramuslo de pollo a la plancha",
+       "en": "Grilled chicken thigh"
+      },
+      "side": {
+       "ca": "Tomàtiga trossejada",
+       "es": "Tomate troceado",
+       "en": "Chopped tomato"
+      }
+     }
+    },
+    "2026-10-15": {
+     "lunch": {
+      "first": {
+       "ca": "Cuinat de ciurons amb verduretes",
+       "es": "Potaje de garbanzos con verduritas",
+       "en": "Chickpea and vegetable stew"
+      },
+      "second": {
+       "ca": "Lluç a la planxa amb salsa de tomàtiga i pebre vermell",
+       "es": "Merluza a la plancha con salsa de tomate y pimiento rojo",
+       "en": "Grilled hake with tomato and red pepper sauce",
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "second": {
+       "ca": "Truita de patates amb ceba",
+       "es": "Tortilla de patatas con cebolla",
+       "en": "Potato and onion omelette",
+       "a": [
+        3
+       ]
+      },
+      "side": {
+       "ca": "Ensalada de lletuga, tomàtiga i blat de les índies",
+       "es": "Ensalada de lechuga, tomate y maíz",
+       "en": "Lettuce, tomato and sweetcorn salad"
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     },
+     "dinner": [
+      {
+       "ca": "Salmó a la planxa acompanyat de gírgoles a la planxa i quinoa",
+       "es": "Salmón a la plancha acompañado de setas de cardo a la plancha y quinoa",
+       "en": "Grilled salmon with grilled oyster mushrooms and quinoa",
+       "a": [
+        4
+       ]
+      },
+      {
+       "ca": "Iogurt o fruita",
+       "es": "Yogur o fruta",
+       "en": "Yogurt or fruit",
+       "a": [
+        7
+       ]
+      }
+     ]
+    },
+    "2026-10-20": {
+     "lunch": {
+      "side": {
+       "ca": "Ensalada de lletuga i blat de les índies",
+       "es": "Ensalada de lechuga y maíz",
+       "en": "Lettuce and sweetcorn salad"
+      }
+     }
+    },
+    "2026-10-21": {
+     "lunch": {
+      "side": {
+       "ca": "Ensalada de lletuga, tomàtiga i pastanaga",
+       "es": "Ensalada de lechuga, tomate y zanahoria",
+       "en": "Lettuce, tomato and carrot salad"
+      }
+     }
+    },
+    "2026-10-22": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de carabassó",
+       "es": "Crema de calabacín",
+       "en": "Courgette soup"
+      },
+      "side": {
+       "ca": "Ensalada de lletuga, pebre verd i ceba vermella",
+       "es": "Ensalada de lechuga, pimiento verde y cebolla roja",
+       "en": "Lettuce, green pepper and red onion salad"
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     },
+     "dinner": [
+      {
+       "ca": "Wrap d'espinacs amb salmó, formatge i tomàtiga",
+       "es": "Wrap de espinacas con salmón, queso y tomate",
+       "en": "Spinach wrap with salmon, cheese and tomato",
+       "a": [
+        1,
+        4,
+        7
+       ]
+      },
+      {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     ]
+    },
+    "2026-10-27": {
+     "lunch": {
+      "side": {
+       "ca": "Ensalada de lletuga, cogombre i pinya",
+       "es": "Ensalada de lechuga, pepino y piña",
+       "en": "Lettuce, cucumber and pineapple salad"
+      }
+     }
+    },
+    "2026-10-29": {
+     "lunch": {
+      "first": {
+       "ca": "Ensalada de ciurons (tomàtiga, pebre verd i ceba vermella)",
+       "es": "Ensalada de garbanzos (tomate, pimiento verde y cebolla roja)",
+       "en": "Chickpea salad (tomato, green pepper and red onion)"
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "first": {
+       "ca": "Arròs amb verduretes",
+       "es": "Arroz con verduritas",
+       "en": "Rice with vegetables"
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     }
+    }
+   }
+  },
+  "petit-cide-triturat": {
+   "base": "general",
+   "dinner": "none",
+   "days": {
+    "2026-10-01": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de pollastre i verdures",
+       "es": "Crema de pollo y verduras",
+       "en": "Chicken and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-02": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de peix i verdures",
+       "es": "Crema de pescado y verduras",
+       "en": "Fish and vegetable purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-05": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de pollastre, ciurons i verdures",
+       "es": "Crema de pollo, garbanzos y verduras",
+       "en": "Chicken, chickpea and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de peix i verdures",
+       "es": "Crema de pescado y verduras",
+       "en": "Fish and vegetable purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-07": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de verdures i arròs",
+       "es": "Crema de verduras y arroz",
+       "en": "Vegetable and rice purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-08": {
+     "lunch": {
+      "first": {
+       "ca": "Crema d'indiot, mongetes blanques i verdures",
+       "es": "Crema de pavo, judías blancas y verduras",
+       "en": "Turkey, white bean and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de peix i carabassa",
+       "es": "Crema de pescado y calabaza",
+       "en": "Fish and pumpkin purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de lluç, llenties i verdures",
+       "es": "Crema de merluza, lentejas y verduras",
+       "en": "Hake, lentil and vegetable purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-14": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de pollastre, arròs i verdures",
+       "es": "Crema de pollo, arroz y verduras",
+       "en": "Chicken, rice and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-15": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de lluç, ciurons i verdures",
+       "es": "Crema de merluza, garbanzos y verduras",
+       "en": "Hake, chickpea and vegetable purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de pollastre i verdures",
+       "es": "Crema de pollo y verduras",
+       "en": "Chicken and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de llenties i verdures",
+       "es": "Crema de lentejas y verduras",
+       "en": "Lentil and vegetable purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-21": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de lluç i verdures",
+       "es": "Crema de merluza y verduras",
+       "en": "Hake and vegetable purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-22": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de carabassó i pollastre",
+       "es": "Crema de calabacín y pollo",
+       "en": "Courgette and chicken purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de ciurons i verdures",
+       "es": "Crema de garbanzos y verduras",
+       "en": "Chickpea and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de pollastre i verdures",
+       "es": "Crema de pollo y verduras",
+       "en": "Chicken and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-27": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de llenties i verdures",
+       "es": "Crema de lentejas y verduras",
+       "en": "Lentil and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de lluç i verdures",
+       "es": "Crema de merluza y verduras",
+       "en": "Hake and vegetable purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-29": {
+     "lunch": {
+      "first": {
+       "ca": "Crema d'indiot, ciurons i verdures",
+       "es": "Crema de pavo, garbanzos y verduras",
+       "en": "Turkey, chickpea and vegetable purée"
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de lluç i verdures",
+       "es": "Crema de merluza y verduras",
+       "en": "Hake and vegetable purée",
+       "a": [
+        4
+       ]
+      },
+      "second": null,
+      "side": null,
+      "dessert": {
+       "ca": "Fruita triturada",
+       "es": "Fruta triturada",
+       "en": "Puréed fruit"
+      }
+     }
+    }
+   }
+  },
+  "diabetic-6r": {
+   "base": "general",
+   "dinner": "general",
+   "days": {
+    "2026-10-01": {
+     "lunch": {
+      "first": {
+       "ca": "Ensalada adaptada",
+       "es": "Ensalada adaptada",
+       "en": "Adapted salad"
+      },
+      "second": {
+       "ca": "Lasanya casolana de pollastre",
+       "es": "Lasaña casera de pollo",
+       "en": "Homemade chicken lasagne",
+       "a": [],
+       "note": {
+        "ca": "3R: 290 g de lasanya (làmines de pasta i beixamel)",
+        "es": "3R: 290 g de lasaña (láminas de pasta y bechamel)",
+        "en": "3R: 290 g lasagne (pasta sheets and béchamel)"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-02": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 195 g de patata bullida o crua",
+        "es": "3R: 195 g de patata hervida o cruda",
+        "en": "3R: 195 g boiled or raw potato"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-05": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 165 g de ciurons cuits o 60 g en cru",
+        "es": "3R: 165 g de garbanzos cocidos o 60 g en crudo",
+        "en": "3R: 165 g cooked chickpeas or 60 g raw"
+       }
+      },
+      "side": {
+       "note": {
+        "ca": "1R: 65 g de patata cuita",
+        "es": "1R: 65 g de patata cocida",
+        "en": "1R: 65 g cooked potato"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 135 g de pasta cuita o 45 g en cru",
+        "es": "3R: 135 g de pasta cocida o 45 g en crudo",
+        "en": "3R: 135 g cooked pasta or 45 g raw"
+       }
+      },
+      "second": {
+       "ca": "Lluç a la planxa",
+       "es": "Merluza a la plancha",
+       "en": "Grilled hake",
+       "a": [
+        4
+       ]
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-07": {
+     "lunch": {
+      "first": {
+       "ca": "Arròs brut",
+       "es": "Arroz brut",
+       "en": "Arròs brut (Mallorcan rice stew)",
+       "note": {
+        "ca": "3R: 114 g d'arròs bullit",
+        "es": "3R: 114 g de arroz hervido",
+        "en": "3R: 114 g boiled rice"
+       }
+      },
+      "second": {
+       "note": {
+        "ca": "1R: 65 g de patata cuita",
+        "es": "1R: 65 g de patata cocida",
+        "en": "1R: 65 g cooked potato"
+       }
+      },
+      "side": {
+       "ca": "Ensalada adaptada",
+       "es": "Ensalada adaptada",
+       "en": "Adapted salad"
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-08": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 165 g de llegum cuit o 75 g en cru",
+        "es": "3R: 165 g de legumbre cocida o 75 g en crudo",
+        "en": "3R: 165 g cooked beans or 75 g raw"
+       }
+      },
+      "side": {
+       "note": {
+        "ca": "1R: 40 g d'arròs integral bullit o 13 g en cru",
+        "es": "1R: 40 g de arroz integral hervido o 13 g en crudo",
+        "en": "1R: 40 g boiled brown rice or 13 g raw"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de carabassa",
+       "es": "Crema de calabaza",
+       "en": "Pumpkin soup",
+       "a": [],
+       "note": {
+        "ca": "3R: 195 g de patata bullida o crua",
+        "es": "3R: 195 g de patata hervida o cruda",
+        "en": "3R: 195 g boiled or raw potato"
+       }
+      },
+      "second": {
+       "note": {
+        "ca": "1R: 200 g",
+        "es": "1R: 200 g",
+        "en": "1R: 200 g"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 150 g de llenties cuites o 60 g en cru",
+        "es": "3R: 150 g de lentejas cocidas o 60 g en crudo",
+        "en": "3R: 150 g cooked lentils or 60 g raw"
+       }
+      },
+      "second": {
+       "note": {
+        "ca": "1R: 200 g",
+        "es": "1R: 200 g",
+        "en": "1R: 200 g"
+       }
+      },
+      "side": {
+       "ca": "Ensalada adaptada",
+       "es": "Ensalada adaptada",
+       "en": "Adapted salad"
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-14": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 114 g d'arròs bullit",
+        "es": "3R: 114 g de arroz hervido",
+        "en": "3R: 114 g boiled rice"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-15": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 165 g de ciurons cuits o 60 g en cru",
+        "es": "3R: 165 g de garbanzos cocidos o 60 g en crudo",
+        "en": "3R: 165 g cooked chickpeas or 60 g raw"
+       }
+      },
+      "side": {
+       "note": {
+        "ca": "1R: 65 g de patata cuita",
+        "es": "1R: 65 g de patata cocida",
+        "en": "1R: 65 g cooked potato"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "4R: 180 g de pasta cuita o 60 g en cru",
+        "es": "4R: 180 g de pasta cocida o 60 g en crudo",
+        "en": "4R: 180 g cooked pasta or 60 g raw"
+       }
+      },
+      "second": {
+       "note": {
+        "ca": "1R: 65 g de patata cuita",
+        "es": "1R: 65 g de patata cocida",
+        "en": "1R: 65 g cooked potato"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Sense pa",
+       "es": "Sin pan",
+       "en": "No bread"
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 150 g de llenties cuites o 60 g en cru",
+        "es": "3R: 150 g de lentejas cocidas o 60 g en crudo",
+        "en": "3R: 150 g cooked lentils or 60 g raw"
+       }
+      },
+      "second": {
+       "note": {
+        "ca": "1R: 200 g",
+        "es": "1R: 200 g",
+        "en": "1R: 200 g"
+       }
+      },
+      "side": {
+       "ca": "Ensalada adaptada",
+       "es": "Ensalada adaptada",
+       "en": "Adapted salad"
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-21": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "4R: 180 g de pasta integral cuita o 60 g en cru",
+        "es": "4R: 180 g de pasta integral cocida o 60 g en crudo",
+        "en": "4R: 180 g cooked wholewheat pasta or 60 g raw"
+       }
+      },
+      "second": {
+       "note": {
+        "ca": "1R: 65 g de patata cuita",
+        "es": "1R: 65 g de patata cocida",
+        "en": "1R: 65 g cooked potato"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Sense pa",
+       "es": "Sin pan",
+       "en": "No bread"
+      }
+     }
+    },
+    "2026-10-22": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de carabassó",
+       "es": "Crema de calabacín",
+       "en": "Courgette soup",
+       "a": [],
+       "note": {
+        "ca": "3R: 195 g de patata bullida o crua",
+        "es": "3R: 195 g de patata hervida o cruda",
+        "en": "3R: 195 g boiled or raw potato"
+       }
+      },
+      "side": {
+       "note": {
+        "ca": "1R: 40 g d'arròs integral bullit o 13 g en cru",
+        "es": "1R: 40 g de arroz integral hervido o 13 g en crudo",
+        "en": "1R: 40 g boiled brown rice or 13 g raw"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 165 g de ciurons cuits o 60 g en cru",
+        "es": "3R: 165 g de garbanzos cocidos o 60 g en crudo",
+        "en": "3R: 165 g cooked chickpeas or 60 g raw"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "4R: 180 g de pasta cuita o 60 g en cru",
+        "es": "4R: 180 g de pasta cocida o 60 g en crudo",
+        "en": "4R: 180 g cooked pasta or 60 g raw"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-27": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 150 g de llenties cuites o 60 g en cru",
+        "es": "3R: 150 g de lentejas cocidas o 60 g en crudo",
+        "en": "3R: 150 g cooked lentils or 60 g raw"
+       }
+      },
+      "second": {
+       "note": {
+        "ca": "1R: 65 g de patata cuita",
+        "es": "1R: 65 g de patata cocida",
+        "en": "1R: 65 g cooked potato"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 135 g de pasta cuita o 45 g en cru",
+        "es": "3R: 135 g de pasta cocida o 45 g en crudo",
+        "en": "3R: 135 g cooked pasta or 45 g raw"
+       }
+      },
+      "second": {
+       "note": {
+        "ca": "1R: 200 g",
+        "es": "1R: 200 g",
+        "en": "1R: 200 g"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-29": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 165 g de ciurons cuits o 60 g en cru",
+        "es": "3R: 165 g de garbanzos cocidos o 60 g en crudo",
+        "en": "3R: 165 g cooked chickpeas or 60 g raw"
+       }
+      },
+      "side": {
+       "note": {
+        "ca": "1R: 65 g de patata cuita",
+        "es": "1R: 65 g de patata cocida",
+        "en": "1R: 65 g cooked potato"
+       }
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "first": {
+       "note": {
+        "ca": "3R: 114 g d'arròs bullit",
+        "es": "3R: 114 g de arroz hervido",
+        "en": "3R: 114 g boiled rice"
+       }
+      },
+      "second": {
+       "a": [
+        4,
+        14
+       ]
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    }
+   }
+  },
+  "diabetic-7r": {
+   "base": "diabetic-6r",
+   "dinner": "general",
+   "days": {
+    "2026-10-01": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "2R",
+        "es": "2R",
+        "en": "2R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-02": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "2R",
+        "es": "2R",
+        "en": "2R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-05": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "2R",
+        "es": "2R",
+        "en": "2R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-07": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-08": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-14": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "2R",
+        "es": "2R",
+        "en": "2R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-15": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-21": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "1R: 20 g",
+        "es": "1R: 20 g",
+        "en": "1R: 20 g"
+       }
+      }
+     }
+    },
+    "2026-10-22": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "2R",
+        "es": "2R",
+        "en": "2R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "2R",
+        "es": "2R",
+        "en": "2R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-27": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-29": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "1R",
+        "es": "1R",
+        "en": "1R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit",
+       "note": {
+        "ca": "2R",
+        "es": "2R",
+        "en": "2R"
+       }
+      },
+      "bread": {
+       "ca": "Pa integral",
+       "es": "Pan integral",
+       "en": "Wholemeal bread",
+       "note": {
+        "ca": "2R: 40 g",
+        "es": "2R: 40 g",
+        "en": "2R: 40 g"
+       }
+      }
+     }
+    }
+   }
+  },
+  "no-gluten": {
+   "base": "general",
+   "dinner": "general",
+   "days": {
+    "2026-10-01": {
+     "lunch": {
+      "second": {
+       "ca": "Lasanya casolana de pollastre",
+       "es": "Lasaña casera de pollo",
+       "en": "Homemade chicken lasagne",
+       "a": []
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "first": {
+       "ca": "Macarrons amb salsa de tomàtiga i verdures",
+       "es": "Macarrones con salsa de tomate y verduras",
+       "en": "Macaroni with tomato and vegetable sauce",
+       "a": []
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de carabassa amb crostons al forn",
+       "es": "Crema de calabaza con crostones al horno",
+       "en": "Pumpkin soup with baked croutons",
+       "a": [
+        3
+       ]
+      },
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "first": {
+       "a": []
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-21": {
+     "lunch": {
+      "first": {
+       "ca": "Macarrons amb salsa de tomàtiga i verdures",
+       "es": "Macarrones con salsa de tomate y verduras",
+       "en": "Macaroni with tomato and vegetable sauce",
+       "a": []
+      }
+     }
+    },
+    "2026-10-22": {
+     "lunch": {
+      "first": {
+       "a": [
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "second": {
+       "ca": "Pilotes casolanes de pollastre",
+       "es": "Albóndigas caseras de pollo",
+       "en": "Homemade chicken meatballs",
+       "a": []
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "first": {
+       "ca": "Pasta amb salsa de tomàtiga i verdures",
+       "es": "Pasta con salsa de tomate y verduras",
+       "en": "Pasta with tomato and vegetable sauce",
+       "a": []
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "first": {
+       "ca": "Sopa de bullit",
+       "es": "Sopa de cocido",
+       "en": "Meat broth soup",
+       "a": [
+        9
+       ]
+      },
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "second": {
+       "a": [
+        4,
+        14
+       ]
+      }
+     }
+    }
+   }
+  },
+  "no-gluten-lactosa-plv": {
+   "base": "no-gluten",
+   "dinner": "general",
+   "days": {
+    "2026-10-01": {
+     "lunch": {
+      "first": {
+       "ca": "Ensalada de lletuga, tomàtiga i blat de les índies",
+       "es": "Ensalada de lechuga, tomate y maíz",
+       "en": "Lettuce, tomato and sweetcorn salad",
+       "a": []
+      }
+     }
+    },
+    "2026-10-02": {
+     "lunch": {
+      "first": {
+       "ca": "Ensaladilla casolana (pastanaga, pèsols, mongeta verda, patata, ou bullit i tonyina)",
+       "es": "Ensaladilla casera (zanahoria, guisantes, judía verde, patata, huevo cocido y atún)",
+       "en": "Homemade Russian salad (carrot, peas, green beans, potato, boiled egg and tuna)",
+       "a": [
+        3,
+        4
+       ]
+      },
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "second": {
+       "ca": "Lluç a la planxa",
+       "es": "Merluza a la plancha",
+       "en": "Grilled hake",
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "dessert": {
+       "ca": "Fruita",
+       "es": "Fruta",
+       "en": "Fruit"
+      }
+     }
+    }
+   }
+  },
+  "no-lactosa-plv": {
+   "base": "general",
+   "dinner": "general",
+   "days": {
+    "2026-10-01": {
+     "lunch": {
+      "first": {
+       "ca": "Ensalada de lletuga, tomàtiga i blat de les índies",
+       "es": "Ensalada de lechuga, tomate y maíz",
+       "en": "Lettuce, tomato and sweetcorn salad",
+       "a": []
+      },
+      "second": {
+       "ca": "Lasanya casolana de pollastre",
+       "es": "Lasaña casera de pollo",
+       "en": "Homemade chicken lasagne",
+       "a": []
+      }
+     }
+    },
+    "2026-10-02": {
+     "lunch": {
+      "first": {
+       "ca": "Ensaladilla casolana (pastanaga, pèsols, mongeta verda, patata, ou bullit i tonyina)",
+       "es": "Ensaladilla casera (zanahoria, guisantes, judía verde, patata, huevo cocido y atún)",
+       "en": "Homemade Russian salad (carrot, peas, green beans, potato, boiled egg and tuna)",
+       "a": [
+        3,
+        4
+       ]
+      },
+      "dessert": {
+       "ca": "Iogurt de soja o fruita",
+       "es": "Yogur de soja o fruta",
+       "en": "Soy yogurt or fruit",
+       "a": [
+        1,
+        6
+       ]
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "second": {
+       "ca": "Lluç a la planxa",
+       "es": "Merluza a la plancha",
+       "en": "Grilled hake",
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      },
+      "dessert": {
+       "ca": "Iogurt de soja o fruita",
+       "es": "Yogur de soja o fruta",
+       "en": "Soy yogurt or fruit",
+       "a": [
+        1,
+        6
+       ]
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "dessert": {
+       "ca": "Iogurt de soja o fruita",
+       "es": "Yogur de soja o fruta",
+       "en": "Soy yogurt or fruit",
+       "a": [
+        1,
+        6
+       ]
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "dessert": {
+       "ca": "Iogurt de soja o fruita",
+       "es": "Yogur de soja o fruta",
+       "en": "Soy yogurt or fruit",
+       "a": [
+        1,
+        6
+       ]
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "first": {
+       "ca": "Caracolas amb salsa de tomàtiga i verdures",
+       "es": "Caracolas con salsa de tomate y verduras",
+       "en": "Pasta shells with tomato and vegetable sauce",
+       "a": [
+        1,
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "dessert": {
+       "ca": "Iogurt de soja o fruita",
+       "es": "Yogur de soja o fruta",
+       "en": "Soy yogurt or fruit",
+       "a": [
+        1,
+        6
+       ]
+      }
+     }
+    }
+   }
+  },
+  "no-ou": {
+   "base": "general",
+   "dinner": "general",
+   "days": {
+    "2026-10-01": {
+     "lunch": {
+      "second": {
+       "ca": "Lasanya casolana de pollastre",
+       "es": "Lasaña casera de pollo",
+       "en": "Homemade chicken lasagne",
+       "a": []
+      }
+     }
+    },
+    "2026-10-02": {
+     "lunch": {
+      "first": {
+       "ca": "Ensaladilla casolana (pastanaga, pèsols, mongeta verda, patata, tonyina i maionesa)",
+       "es": "Ensaladilla casera (zanahoria, guisantes, judía verde, patata, atún y mayonesa)",
+       "en": "Homemade Russian salad (carrot, peas, green beans, potato, tuna and mayonnaise)",
+       "a": [
+        4,
+        7
+       ]
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "first": {
+       "ca": "Macarrons amb salsa de tomàtiga i verdures",
+       "es": "Macarrones con salsa de tomate y verduras",
+       "en": "Macaroni with tomato and vegetable sauce",
+       "a": []
+      }
+     }
+    },
+    "2026-10-07": {
+     "lunch": {
+      "second": {
+       "ca": "Contracuixa de pollastre a la planxa",
+       "es": "Contramuslo de pollo a la plancha",
+       "en": "Grilled chicken thigh"
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "first": {
+       "a": []
+      },
+      "second": {
+       "ca": "Hamburguesa casolana de verdures",
+       "es": "Hamburguesa casera de verduras",
+       "en": "Homemade vegetable burger",
+       "a": []
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-21": {
+     "lunch": {
+      "first": {
+       "ca": "Macarrons amb salsa de tomàtiga i verdures",
+       "es": "Macarrones con salsa de tomate y verduras",
+       "en": "Macaroni with tomato and vegetable sauce",
+       "a": []
+      },
+      "second": {
+       "ca": "Llom a la planxa",
+       "es": "Lomo a la plancha",
+       "en": "Grilled pork loin"
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "second": {
+       "ca": "Pilotes casolanes de pollastre",
+       "es": "Albóndigas caseras de pollo",
+       "en": "Homemade chicken meatballs",
+       "a": []
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "first": {
+       "ca": "Pasta amb salsa de tomàtiga i verdures",
+       "es": "Pasta con salsa de tomate y verduras",
+       "en": "Pasta with tomato and vegetable sauce",
+       "a": []
+      }
+     }
+    },
+    "2026-10-27": {
+     "lunch": {
+      "second": {
+       "ca": "Lluç a la planxa",
+       "es": "Merluza a la plancha",
+       "en": "Grilled hake",
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "first": {
+       "ca": "Sopa de bullit",
+       "es": "Sopa de cocido",
+       "en": "Meat broth soup",
+       "a": [
+        9
+       ]
+      },
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "second": {
+       "a": [
+        4,
+        14
+       ]
+      }
+     }
+    }
+   }
+  },
+  "no-peix-marisc": {
+   "base": "general",
+   "dinner": "general",
+   "days": {
+    "2026-10-02": {
+     "lunch": {
+      "first": {
+       "ca": "Ensaladilla casolana (pastanaga, pèsols, mongeta verda, patata i maionesa)",
+       "es": "Ensaladilla casera (zanahoria, guisantes, judía verde, patata y mayonesa)",
+       "en": "Homemade Russian salad (carrot, peas, green beans, potato and mayonnaise)",
+       "a": [
+        7
+       ]
+      },
+      "second": {
+       "ca": "Ous bullits trempats",
+       "es": "Huevos duros aliñados",
+       "en": "Dressed boiled eggs",
+       "a": [
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "second": {
+       "ca": "Hamburguesa casolana de soja texturitzada",
+       "es": "Hamburguesa casera de soja texturizada",
+       "en": "Homemade textured soy burger",
+       "a": [
+        6
+       ]
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "second": {
+       "ca": "Pitrera de pollastre arrebossada",
+       "es": "Pechuga de pollo empanada",
+       "en": "Breaded chicken breast",
+       "a": []
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "second": {
+       "ca": "Verdures arrebossades casolanes",
+       "es": "Verduras rebozadas caseras",
+       "en": "Homemade battered vegetables",
+       "a": []
+      }
+     }
+    },
+    "2026-10-14": {
+     "lunch": {
+      "first": {
+       "ca": "Arròs amb verdures",
+       "es": "Arroz con verduras",
+       "en": "Rice with vegetables",
+       "a": []
+      }
+     }
+    },
+    "2026-10-15": {
+     "lunch": {
+      "second": {
+       "ca": "Hamburguesa casolana de verdures",
+       "es": "Hamburguesa casera de verduras",
+       "en": "Homemade vegetable burger",
+       "a": []
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "second": {
+       "ca": "Pitrera d'indiot arrebossada",
+       "es": "Pechuga de pavo empanada",
+       "en": "Breaded turkey breast"
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "first": {
+       "ca": "Caracolas amb salsa de tomàtiga i verdures",
+       "es": "Caracolas con salsa de tomate y verduras",
+       "en": "Pasta shells with tomato and vegetable sauce",
+       "a": [
+        1,
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "second": {
+       "ca": "Pitrera de pollastre arrebossada",
+       "es": "Pechuga de pollo empanada",
+       "en": "Breaded chicken breast",
+       "a": []
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "second": {
+       "ca": "Raoles casolanes de verdures",
+       "es": "Raolas caseras de verduras",
+       "en": "Homemade vegetable patties (raoles)",
+       "a": []
+      }
+     }
+    }
+   }
+  },
+  "no-fruits-secs": {
+   "base": "general",
+   "dinner": "general",
+   "days": {
+    "2026-10-09": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    }
+   }
+  },
+  "no-fruits-secs-ou": {
+   "base": "no-ou",
+   "dinner": "general",
+   "days": {}
+  },
+  "no-fruits-secs-marisc": {
+   "base": "general",
+   "dinner": "general",
+   "days": {
+    "2026-10-09": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-14": {
+     "lunch": {
+      "first": {
+       "ca": "Arròs amb verdures",
+       "es": "Arroz con verduras",
+       "en": "Rice with vegetables",
+       "a": []
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "first": {
+       "ca": "Caracolas amb salsa de tomàtiga i verdures",
+       "es": "Caracolas con salsa de tomate y verduras",
+       "en": "Pasta shells with tomato and vegetable sauce",
+       "a": [
+        1,
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "second": {
+       "a": [
+        4
+       ]
+      }
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "second": {
+       "ca": "Raoles casolanes de verdures",
+       "es": "Raolas caseras de verduras",
+       "en": "Homemade vegetable patties (raoles)",
+       "a": []
+      }
+     }
+    }
+   }
+  },
+  "no-fruits-secs-peix-marisc": {
+   "base": "no-peix-marisc",
+   "dinner": "general",
+   "days": {}
+  },
+  "vegetaria": {
+   "base": "general",
+   "dinner": "general",
+   "days": {
+    "2026-10-01": {
+     "lunch": {
+      "second": {
+       "ca": "Canelons d'espinacs",
+       "es": "Canelones de espinacas",
+       "en": "Spinach cannelloni",
+       "a": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        14
+       ]
+      }
+     }
+    },
+    "2026-10-02": {
+     "lunch": {
+      "first": {
+       "ca": "Ensaladilla casolana (pastanaga, pèsols, mongeta verda, patata i maionesa)",
+       "es": "Ensaladilla casera (zanahoria, guisantes, judía verde, patata y mayonesa)",
+       "en": "Homemade Russian salad (carrot, peas, green beans, potato and mayonnaise)",
+       "a": [
+        7
+       ]
+      },
+      "second": {
+       "ca": "Ous bullits trempats",
+       "es": "Huevos duros aliñados",
+       "en": "Dressed boiled eggs",
+       "a": [
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-05": {
+     "lunch": {
+      "second": {
+       "ca": "Raoles de verdures a la planxa",
+       "es": "Raolas de verduras a la plancha",
+       "en": "Grilled vegetable patties (raoles)"
+      }
+     }
+    },
+    "2026-10-06": {
+     "lunch": {
+      "second": {
+       "ca": "Hamburguesa casolana de soja texturitzada",
+       "es": "Hamburguesa casera de soja texturizada",
+       "en": "Homemade textured soy burger",
+       "a": [
+        6
+       ]
+      }
+     }
+    },
+    "2026-10-07": {
+     "lunch": {
+      "first": {
+       "ca": "Arròs amb verdures",
+       "es": "Arroz con verduras",
+       "en": "Rice with vegetables",
+       "a": []
+      }
+     }
+    },
+    "2026-10-08": {
+     "lunch": {
+      "second": {
+       "ca": "Saltejat de verdures",
+       "es": "Salteado de verduras",
+       "en": "Stir-fried vegetables"
+      }
+     }
+    },
+    "2026-10-09": {
+     "lunch": {
+      "first": {
+       "ca": "Crema de carabassa amb crostons al forn",
+       "es": "Crema de calabaza con crostones al horno",
+       "en": "Pumpkin soup with baked croutons",
+       "a": [
+        1
+       ]
+      },
+      "second": {
+       "ca": "Truita a la francesa",
+       "es": "Tortilla francesa",
+       "en": "Plain omelette",
+       "a": [
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-13": {
+     "lunch": {
+      "second": {
+       "ca": "Verdures arrebossades casolanes",
+       "es": "Verduras rebozadas caseras",
+       "en": "Homemade battered vegetables",
+       "a": []
+      }
+     }
+    },
+    "2026-10-14": {
+     "lunch": {
+      "first": {
+       "ca": "Arròs amb verdures",
+       "es": "Arroz con verduras",
+       "en": "Rice with vegetables",
+       "a": []
+      },
+      "second": {
+       "ca": "Truita a la francesa",
+       "es": "Tortilla francesa",
+       "en": "Plain omelette",
+       "a": [
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-15": {
+     "lunch": {
+      "second": {
+       "ca": "Hamburguesa casolana de verdures",
+       "es": "Hamburguesa casera de verduras",
+       "en": "Homemade vegetable burger",
+       "a": []
+      }
+     }
+    },
+    "2026-10-16": {
+     "lunch": {
+      "first": {
+       "ca": "Macarrons amb salsa de tomàtiga, verdures i formatge",
+       "es": "Macarrones con salsa de tomate, verduras y queso",
+       "en": "Macaroni with tomato, vegetable and cheese sauce",
+       "a": [
+        1,
+        3,
+        7
+       ]
+      }
+     }
+    },
+    "2026-10-20": {
+     "lunch": {
+      "second": {
+       "ca": "Pilotes casolanes de soja texturitzada",
+       "es": "Albóndigas caseras de soja texturizada",
+       "en": "Homemade textured soy balls",
+       "a": [
+        6
+       ]
+      }
+     }
+    },
+    "2026-10-22": {
+     "lunch": {
+      "second": {
+       "ca": "Pastís de verdures",
+       "es": "Pastel de verduras",
+       "en": "Vegetable bake",
+       "a": [
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-23": {
+     "lunch": {
+      "second": {
+       "ca": "Verdures arrebossades casolanes",
+       "es": "Verduras rebozadas caseras",
+       "en": "Homemade battered vegetables",
+       "a": []
+      }
+     }
+    },
+    "2026-10-26": {
+     "lunch": {
+      "first": {
+       "ca": "Caracolas amb salsa de tomàtiga i verdures",
+       "es": "Caracolas con salsa de tomate y verduras",
+       "en": "Pasta shells with tomato and vegetable sauce",
+       "a": [
+        1,
+        3
+       ]
+      },
+      "second": {
+       "ca": "Hamburguesa casolana de soja texturitzada",
+       "es": "Hamburguesa casera de soja texturizada",
+       "en": "Homemade textured soy burger",
+       "a": [
+        6
+       ]
+      }
+     }
+    },
+    "2026-10-28": {
+     "lunch": {
+      "first": {
+       "ca": "Sopa de verdures amb pasta integral",
+       "es": "Sopa de verduras con pasta integral",
+       "en": "Vegetable soup with wholewheat pasta",
+       "a": [
+        1,
+        3,
+        9
+       ]
+      },
+      "second": {
+       "ca": "Ous bullits trempats",
+       "es": "Huevos duros aliñados",
+       "en": "Dressed boiled eggs",
+       "a": [
+        3
+       ]
+      }
+     }
+    },
+    "2026-10-29": {
+     "lunch": {
+      "second": {
+       "ca": "Estofat de verdures i patata",
+       "es": "Estofado de verduras y patata",
+       "en": "Vegetable and potato stew"
+      },
+      "side": null
+     }
+    },
+    "2026-10-30": {
+     "lunch": {
+      "first": {
+       "ca": "Paella de verdures i pèsols",
+       "es": "Paella de verduras y guisantes",
+       "en": "Vegetable and pea paella"
+      },
+      "second": {
+       "ca": "Raoles casolanes de verdures",
+       "es": "Raolas caseras de verduras",
+       "en": "Homemade vegetable patties (raoles)",
+       "a": []
+      }
+     }
+    }
+   }
+  }
+ }
+}
