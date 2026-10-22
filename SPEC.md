@@ -142,10 +142,12 @@ Re-check when "Berenars-2027-28.pdf" appears.
 2. ✅ `/update-menu` command + validator → full October file, all 15 variants (0.2.0). Source format: general in
    full + each variant as differences from a base (`data/src/`), expanded by `scripts/build-month.mjs`.
 3. Watcher Action + issue flow.
-4. PWA + stale banner + berenars.
+4. PWA + stale banner + berenars + variant picker. Service worker network-first for all of `data/*.json`
+   (incl. `variants.json`); load only the current month and its neighbours instead of every month in `index.json`.
 5. First real run on the November PDF.
 
 ## Open questions
 - Which variant(s) do the twins use? (Pre-select it.)
-- Dinner fallback for variants without a dinner suggestion: show the general one (proposed) or hide?
+- Dinner fallback for variants without a dinner suggestion: **implemented in 0.2.0** as the general menu's dinner
+  with a "From the general menu" label (none for the puréed menu). Pending Guille's OK.
 - Should the Today card also show tomorrow's first dish as a teaser at night (after ~18:00)?
