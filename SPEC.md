@@ -16,7 +16,7 @@ Refined with Guille on 2026-10-22.
 | Languages | CA / ES / EN with flag buttons (as in Laboratorio Mellis), remembered. |
 | Extras v1 | Dinner suggestion · afternoon snack (berenar) · add to home screen (PWA, offline). |
 | Not in v1 | Allergen icons (numbers kept in the data for later). |
-| Style | Calm & readable: big type, one food emoji per dish, light/dark mode. |
+| Style | "Laboratori" (0.4.0, picked from `designs/`): the Mellis twins' candy lab, big type, one food emoji and one colour per course, light/dark mode. |
 | Stale data | Banner "Menu for November not loaded yet" + button to the official PDF. |
 | Updates | GitHub Action watches daily (free, no key) → opens an issue → Guille runs `/update-menu` in Claude Code. |
 

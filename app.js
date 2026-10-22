@@ -1,5 +1,6 @@
-// Menú Mellis — today's CIDE lunch on the phone. No build step; data in data/*.json.
+// Menú Mellis — today's CIDE lunch on the phone, in the Mellis twins' candy-lab look. No build step; data in data/*.json.
 (() => {
+  const DATA = 'data/';
   const LANGS = ['ca', 'es', 'en'];
   const LOCALE = { ca: 'ca-ES', es: 'es-ES', en: 'en-GB' };
   // Variant picker comes later (spec step 4); until then ?menu=<id> (ids in data/variants.json) switches it.
@@ -11,10 +12,12 @@
     today: { ca: 'Avui', es: 'Hoy', en: 'Today' },
     tomorrow: { ca: 'Demà', es: 'Mañana', en: 'Tomorrow' },
     yesterday: { ca: 'Ahir', es: 'Ayer', en: 'Yesterday' },
-    lunch: { ca: 'Dinar a l’escola', es: 'Comida en el cole', en: 'School lunch' },
-    dinner: { ca: 'Proposta de sopar', es: 'Propuesta de cena', en: 'Dinner idea' },
+    lunch: { ca: 'Què dinen les mellis?', es: '¿Qué comen las mellis?', en: 'What are the twins having?' },
+    dinner: { ca: 'I per sopar…', es: 'Y para cenar…', en: 'And for dinner…' },
     holiday: { ca: 'Festiu, no hi ha escola', es: 'Festivo, no hay cole', en: 'Holiday, no school' },
     noClasses: { ca: 'No hi ha classes', es: 'No hay clases', en: 'No classes today' },
+    holidayTitle: { ca: 'Festa!', es: '¡Fiesta!', en: 'Day off!' },
+    noClassesTitle: { ca: 'A casa!', es: '¡En casa!', en: 'Home day!' },
     missing: { ca: 'Aquest menú encara no està carregat.', es: 'Este menú aún no está cargado.', en: 'This menu isn’t loaded yet.' },
     openPdf: { ca: 'Obre el menú oficial', es: 'Abre el menú oficial', en: 'Open the official menu' },
     loadError: { ca: 'No s’ha pogut carregar el menú.', es: 'No se ha podido cargar el menú.', en: 'Couldn’t load the menu.' },
@@ -40,7 +43,6 @@
   }
   const toDate = (key) => new Date(`${key}T12:00:00Z`);
   const keyOf = (d) => d.toISOString().slice(0, 10);
-  const addDays = (key, n) => { const d = toDate(key); d.setUTCDate(d.getUTCDate() + n); return keyOf(d); };
   const daysBetween = (a, b) => Math.round((toDate(b) - toDate(a)) / 864e5);
 
   const $ = (id) => document.getElementById(id);
@@ -50,13 +52,14 @@
   let variantName = null; // { ca, es, en } from data/variants.json
   let pos = 0;        // index into days; days.length = "next month not loaded"
   let today = todayKey();
+  const startPos = (from) => { const i = days.findIndex((d) => d.key >= from); return i === -1 ? days.length : i; };
 
   async function load() {
-    const [index, variants] = await Promise.all(['data/index.json', 'data/variants.json'].map((u) =>
-      fetch(u, { cache: 'no-cache' }).then((r) => r.json())));
+    const [index, variants] = await Promise.all(['index.json', 'variants.json'].map((u) =>
+      fetch(DATA + u, { cache: 'no-cache' }).then((r) => r.json())));
     variantName = (variants.find((v) => v.id === VARIANT) || variants[0]).name;
     const months = await Promise.all(index.months.map((m) =>
-      fetch(`data/${m}.json`, { cache: 'no-cache' }).then((r) => r.json())));
+      fetch(`${DATA}${m}.json`, { cache: 'no-cache' }).then((r) => r.json())));
     for (const m of months) {
       const v = m.variants[VARIANT] || m.variants.general;
       if (!v) continue;
@@ -64,8 +67,7 @@
     }
     days.sort((a, b) => a.key.localeCompare(b.key));
     // Today, or the next day with a menu (weekends open on Monday).
-    const i = days.findIndex((d) => d.key >= today);
-    pos = i === -1 ? days.length : i;
+    pos = startPos(today);
   }
 
   function monthName(key) {
@@ -73,10 +75,44 @@
   }
 
   function dishList(items, withRoles) {
-    return `<ul class="dishes">${items.map((c) => `
+    return `<ol class="dishes">${items.map((c) => `
       <li class="${withRoles ? c.role : ''}"><span class="e" aria-hidden="true">${c.emoji}</span>
-      <span class="t">${esc(t(c.text))}${c.note ? `<small>${esc(t(c.note))}</small>` : ''}</span></li>`).join('')}</ul>`;
+      <span class="t"><span class="name">${esc(t(c.text))}</span>${c.note ? `<small>${esc(t(c.note))}</small>` : ''}</span></li>`).join('')}</ol>`;
   }
+
+  // The Mellis twins (from Laboratori Mellis): pigtails with bows in each twin's colour, lab goggles up.
+  // headsOnly = small header badge; otherwise lab coats, arms up when cheering.
+  function twinsSVG({ headsOnly = false, cheer = false } = {}) {
+    const INK = '#3a3a5c';
+    const kid = (x, goggles, accent) => {
+      const hair = `M${x - 38} 78 q-6 -38 38 -42 q42 0 40 40 q-14 -18 -40 -14 q-24 -2 -38 16 z`
+        + `M${x - 34} 70 q-28 8 -26 44 q4 14 16 4 q-8 -22 12 -40 z`
+        + `M${x + 34} 70 q28 8 26 44 q-4 14 -16 4 q8 -22 -12 -40 z`;
+      const bow = (bx) => `<path d="M${bx} 72 l-11 -8 v16 z M${bx} 72 l11 -8 v16 z" fill="${accent}" stroke="${INK}" stroke-width="2.5" stroke-linejoin="round"/><circle cx="${bx}" cy="72" r="4" fill="${accent}" stroke="${INK}" stroke-width="2.5"/>`;
+      const line = `fill="none" stroke="${INK}" stroke-width="3" stroke-linecap="round"`;
+      const face = cheer
+        ? `<path d="M${x - 16} 92 q4 -6 8 0 M${x + 8} 92 q4 -6 8 0" ${line}/><path d="M${x - 10} 102 q10 14 20 0 z" fill="${INK}"/>`
+        : `<circle cx="${x - 12}" cy="92" r="3.5" fill="${INK}"/><circle cx="${x + 12}" cy="92" r="3.5" fill="${INK}"/><path d="M${x - 8} 104 q8 7 16 0" ${line}/>`;
+      const arms = cheer ? [`M${x - 26} 132 q-14 -30 -6 -50`, `M${x + 26} 132 q14 -30 6 -50`]
+        : [`M${x - 26} 134 q-10 18 -4 30`, `M${x + 26} 134 q10 18 4 30`];
+      const body = headsOnly ? '' : arms.map((d) => `<path d="${d}" fill="none" stroke="${INK}" stroke-width="13" stroke-linecap="round"/><path d="${d}" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>`).join('')
+        + `<path d="M${x - 30} 190 q0 -62 30 -64 q30 2 30 64 z" fill="#fff" stroke="${INK}" stroke-width="3"/>`
+        + `<path d="M${x - 9} 128 l9 18 l9 -18" fill="none" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/><circle cx="${x + 14}" cy="160" r="3" fill="${accent}"/>`;
+      return `${body}
+        <circle cx="${x}" cy="88" r="38" fill="#ffd9b8" stroke="${INK}" stroke-width="3"/>
+        <path d="${hair}" fill="#6b3f2a" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/>
+        ${bow(x - 40)}${bow(x + 40)}
+        <rect x="${x - 38}" y="62" width="76" height="8" rx="4" fill="${INK}"/>
+        <circle cx="${x - 14}" cy="64" r="11" fill="${goggles}" stroke="${INK}" stroke-width="3"/>
+        <circle cx="${x + 14}" cy="64" r="11" fill="${goggles}" stroke="${INK}" stroke-width="3"/>
+        <circle cx="${x - 22}" cy="104" r="6" fill="#ff9ec7" opacity=".7"/><circle cx="${x + 22}" cy="104" r="6" fill="#ff9ec7" opacity=".7"/>
+        ${face}`;
+    };
+    const box = headsOnly ? '34 24 232 104' : '34 20 232 175';
+    return `<svg class="twins" viewBox="${box}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      ${kid(100, '#ffb3d9', '#ff6fb5')}${kid(200, '#d4b8ff', '#9b5de5')}</svg>`;
+  }
+  document.querySelector('.brand').insertAdjacentHTML('afterbegin', twinsSVG({ headsOnly: true }));
 
   function render(dir) {
     const entry = days[pos];
@@ -102,14 +138,16 @@
 
       let html = '';
       if (day.status === 'school') {
-        html += `<section class="card"><h2>🍽️ ${esc(t(TEXT.lunch))}</h2>${dishList(day.courses, true)}</section>`;
+        html += `<section class="card lunch"><h2><span aria-hidden="true">🧪</span> ${esc(t(TEXT.lunch))}</h2>${dishList(day.courses, true)}</section>`;
       } else {
-        const [icon, label] = day.status === 'holiday' ? ['🎉', TEXT.holiday] : ['🏠', TEXT.noClasses];
-        html += `<section class="card closed"><div class="big">${icon}</div><p>${esc(t(label))}</p></section>`;
+        const holiday = day.status === 'holiday';
+        const [title, label] = holiday ? [TEXT.holidayTitle, TEXT.holiday] : [TEXT.noClassesTitle, TEXT.noClasses];
+        html += `<section class="card closed ${holiday ? 'holiday' : ''}"><div class="art">${twinsSVG({ cheer: holiday })}</div>
+          <h2>${esc(t(title))}</h2><p>${esc(t(label))}</p></section>`;
       }
       if (day.dinner) {
         const from = day.dinner.fromGeneral ? `<p class="from">${esc(t(TEXT.fromGeneral))}</p>` : '';
-        html += `<section class="card dinner"><h2>🌙 ${esc(t(TEXT.dinner))}</h2>${dishList(day.dinner.items, false)}${from}</section>`;
+        html += `<section class="card dinner"><h2><span aria-hidden="true">🌙</span> ${esc(t(TEXT.dinner))}</h2>${dishList(day.dinner.items, false)}${from}</section>`;
       }
       el.day.innerHTML = html;
       el.foot.innerHTML = `${esc(t(variantName))} · <a href="${source.url}" target="_blank" rel="noopener">${esc(t(TEXT.pdf))} ↗</a>`;
@@ -166,8 +204,7 @@
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState !== 'visible' || todayKey() === today) return;
     today = todayKey();
-    const i = days.findIndex((d) => d.key >= today);
-    pos = i === -1 ? days.length : i;
+    pos = startPos(today);
     render();
   });
 

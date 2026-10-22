@@ -1,133 +1,205 @@
+/* Menú Mellis — the Mellis twins' candy lab (Fredoka, chunky outlines and drop shadows, one colour per course). */
 :root {
-  --bg: #f7f4ee;
+  --ink: #3a3a5c;
+  --muted: #6e6a8e;
   --card: #ffffff;
-  --ink: #23211d;
-  --muted: #6f6a60;
-  --line: #e7e1d6;
-  --accent: #3f7d4e;
-  --accent-soft: #e4efe4;
-  --night: #3d4a7a;
-  --night-soft: #e7e9f4;
-  --shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 4px 14px rgb(0 0 0 / 5%);
+  --line: #efe6f7;
+  --pink: #ff6fb5;
+  --teal: #2ec4b6;
+  --yellow: #ffd23f;
+  --purple: #9b5de5;
+  --orange: #ff9f1c;
+  --blue: #3a86ff;
+  --c-first: #c9f4ef;
+  --c-second: #ffe0bd;
+  --c-side: #fff3b8;
+  --c-dessert: #ffd6ea;
+  --c-bread: #eadcff;
+  --edge: #3a3a5c;
+  --pop: 0 5px 0 rgb(58 58 92 / 25%);
+  --bg:
+    radial-gradient(circle at 12% 18%, #ffe3f1 0 16%, transparent 17%),
+    radial-gradient(circle at 90% 8%, #dff7ff 0 13%, transparent 14%),
+    radial-gradient(circle at 85% 88%, #fff3c4 0 20%, transparent 21%),
+    linear-gradient(160deg, #ffe9f5 0%, #fdf1ff 45%, #e6f9ff 100%);
+  --bar: rgb(255 240 250 / 88%);
+  --night: linear-gradient(150deg, #5b3fa8 0%, #3a3a8c 100%);
+  --round: "Fredoka", "Baloo 2", system-ui, -apple-system, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #1b1a17;
-    --card: #26241f;
-    --ink: #efebe3;
-    --muted: #a39d91;
-    --line: #38352e;
-    --accent: #8cc79a;
-    --accent-soft: #2a3a2d;
-    --night: #a9b4e6;
-    --night-soft: #2b2f42;
-    --shadow: none;
+    --ink: #f3eeff;
+    --muted: #b9b1dc;
+    --card: #2a2346;
+    --line: #3b3360;
+    --c-first: #1d4d4a;
+    --c-second: #5a3a17;
+    --c-side: #4f4518;
+    --c-dessert: #5a2442;
+    --c-bread: #3d2d66;
+    --edge: #0f0b22;
+    --pop: 0 5px 0 rgb(0 0 0 / 45%);
+    --bg:
+      radial-gradient(circle at 12% 18%, rgb(255 111 181 / 14%) 0 16%, transparent 17%),
+      radial-gradient(circle at 90% 8%, rgb(46 196 182 / 12%) 0 13%, transparent 14%),
+      radial-gradient(circle at 85% 88%, rgb(155 93 229 / 16%) 0 20%, transparent 21%),
+      linear-gradient(160deg, #1d1636 0%, #1a1530 50%, #121a33 100%);
+    --bar: rgb(26 21 48 / 88%);
+    --night: linear-gradient(150deg, #3b2a78 0%, #1f2a5e 100%);
   }
 }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0;
-  background: var(--bg);
+  margin: 0; min-height: 100vh;
+  background: var(--bg); background-attachment: fixed;
   color: var(--ink);
-  font: 17px/1.35 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font: 500 17px/1.3 var(--round);
   overflow-x: hidden;
   padding-bottom: env(safe-area-inset-bottom);
 }
 button { font: inherit; color: inherit; cursor: pointer; }
 
 .top {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: calc(10px + env(safe-area-inset-top)) 16px 4px;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: calc(8px + env(safe-area-inset-top)) 14px 0;
   max-width: 560px; margin: 0 auto;
 }
-.brand, .card h2 { word-spacing: .2em; }
-.brand { font-weight: 700; font-size: 15px; color: var(--muted); }
-.langs { display: flex; gap: 4px; }
-.langs button {
-  border: 1px solid var(--line); background: transparent; border-radius: 999px;
-  padding: 4px 10px; font-size: 13px; font-weight: 600; color: var(--muted);
+.brand { display: flex; align-items: center; gap: 6px; font-size: 19px; font-weight: 600; color: var(--purple); white-space: nowrap; }
+.brand b { color: var(--pink); font-weight: 700; }
+.brand .twins {
+  width: 58px; height: 26px; flex: none;
+  background: #fff; border-radius: 999px; border: 2px solid var(--edge); padding: 1px 2px 0;
 }
-.langs button.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.langs { display: flex; gap: 5px; }
+.langs button {
+  border: 2px solid var(--edge); background: var(--card); border-radius: 12px;
+  padding: 3px 8px; font-size: 13px; font-weight: 700; box-shadow: 0 3px 0 rgb(58 58 92 / 25%);
+}
+.langs button.active { background: var(--yellow); color: #3a3a5c; }
 
 .daybar {
   position: sticky; top: 0; z-index: 2;
   display: flex; align-items: center; gap: 8px;
-  padding: 8px 12px; background: var(--bg);
+  padding: 8px 12px 10px;
+  background: var(--bar); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
   max-width: 560px; margin: 0 auto;
 }
 .arrow {
-  flex: none; width: 48px; height: 48px; border-radius: 50%;
-  border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow);
-  font-size: 30px; line-height: 1; padding-bottom: 4px;
+  flex: none; width: 48px; height: 48px; border-radius: 16px;
+  border: 2.5px solid var(--edge); color: #fff; box-shadow: var(--pop);
+  font-size: 32px; font-weight: 700; line-height: 1; padding-bottom: 5px;
+  transition: transform .1s;
 }
-.arrow:disabled { opacity: .3; cursor: default; }
+#prev { background: var(--pink); }
+#next { background: var(--purple); }
+.arrow:active { transform: translateY(3px); box-shadow: 0 2px 0 rgb(58 58 92 / 25%); }
+.arrow:disabled { opacity: .35; cursor: default; }
 .daytitle { flex: 1; text-align: center; min-width: 0; }
 .rel {
-  display: block; font-size: 13px; font-weight: 700; letter-spacing: .06em;
-  text-transform: uppercase; color: var(--accent); min-height: 1.2em;
+  display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+  color: #3a3a5c; background: var(--yellow); padding: 1px 10px; border-radius: 999px;
+  transform: rotate(-3deg); min-height: 1.3em;
 }
-.date { display: block; font-size: 22px; font-weight: 700; }
+.rel:empty { background: transparent; }
+.date { display: block; font-size: 22px; font-weight: 700; line-height: 1.15; margin-top: 2px; }
 .date::first-letter { text-transform: uppercase; }
 
 main {
-  max-width: 560px; margin: 0 auto; padding: 4px 16px 8px;
+  max-width: 560px; margin: 0 auto; padding: 4px 14px 8px;
   touch-action: pan-y;
 }
-main.slide-l { animation: slide-l .22s ease-out; }
-main.slide-r { animation: slide-r .22s ease-out; }
-@keyframes slide-l { from { opacity: 0; transform: translateX(24px); } }
-@keyframes slide-r { from { opacity: 0; transform: translateX(-24px); } }
+main.slide-l { animation: slide-l .25s cubic-bezier(.3,1.5,.6,1); }
+main.slide-r { animation: slide-r .25s cubic-bezier(.3,1.5,.6,1); }
+@keyframes slide-l { from { opacity: 0; transform: translateX(30px) rotate(1deg); } }
+@keyframes slide-r { from { opacity: 0; transform: translateX(-30px) rotate(-1deg); } }
 
 .card {
-  background: var(--card); border-radius: 18px; box-shadow: var(--shadow);
-  padding: 14px 16px; margin-bottom: 12px;
+  background: var(--card); border: 2.5px solid var(--edge); border-radius: 26px; box-shadow: var(--pop);
+  padding: 10px 12px 8px; margin-bottom: 14px;
 }
-.card h2 {
-  margin: 0 0 6px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent);
-}
-.card.dinner h2 { color: var(--night); }
-.card.dinner { background: var(--night-soft); box-shadow: none; }
+.card h2 { margin: 0 4px 6px; font-size: 16px; font-weight: 700; color: var(--purple); }
 
-.dishes { list-style: none; margin: 0; padding: 0; }
+.dishes { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .dishes li {
-  display: flex; gap: 12px; align-items: flex-start;
-  padding: 9px 0; border-top: 1px solid var(--line);
+  display: flex; gap: 10px; align-items: center;
+  padding: 6px 10px 6px 6px; border-radius: 18px; background: var(--c-first);
 }
-.dishes li:first-child { border-top: 0; }
-.dishes .e { font-size: 28px; line-height: 1; width: 34px; text-align: center; flex: none; }
-.dishes .t { font-size: 19px; padding-top: 2px; }
-.dishes .t small { display: block; font-size: 14px; color: var(--muted); }
-.dishes li.dessert .t, .dishes li.bread .t { font-size: 16px; color: var(--muted); padding-top: 5px; }
-.card .from { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+.dishes li.second { background: var(--c-second); }
+.dishes li.side { background: var(--c-side); }
+.dishes li.dessert { background: var(--c-dessert); }
+.dishes li.bread { background: var(--c-bread); }
+.dishes .e {
+  flex: none; width: 42px; height: 42px; border-radius: 50%;
+  display: grid; place-items: center; font-size: 24px;
+  background: var(--card); border: 2px solid var(--edge);
+}
+.dishes .t { min-width: 0; }
+.dishes .name { display: block; font-size: 18px; font-weight: 600; line-height: 1.2; }
+.dishes small { display: block; font-size: 13.5px; font-weight: 500; color: var(--muted); margin-top: 1px; }
+.dishes li.dessert .name, .dishes li.bread .name { font-size: 16.5px; font-weight: 500; }
 
-.closed { text-align: center; padding: 28px 16px; }
-.closed .big { font-size: 56px; line-height: 1; }
-.closed p { margin: 10px 0 0; font-size: 20px; font-weight: 600; }
+.card.dinner {
+  background: var(--night); color: #fff; position: relative; overflow: hidden;
+}
+.card.dinner::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .8;
+  background:
+    radial-gradient(circle at 82% 22%, #fff 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 92% 60%, #fff 0 1px, transparent 2px),
+    radial-gradient(circle at 70% 12%, #ffd23f 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 60% 80%, #fff 0 1px, transparent 2px);
+}
+.card.dinner h2 { color: var(--yellow); position: relative; }
+.card.dinner .dishes li { background: rgb(255 255 255 / 12%); padding: 4px 10px 4px 4px; position: relative; }
+.card.dinner .e { width: 36px; height: 36px; font-size: 19px; background: rgb(255 255 255 / 92%); }
+.card.dinner .name { font-size: 16px; font-weight: 500; }
+.card .from { margin: 6px 4px 2px; font-size: 13px; color: rgb(255 255 255 / 75%); position: relative; }
+
+.closed { text-align: center; padding: 14px 16px 18px; }
+.closed .art {
+  width: 210px; max-width: 70%; margin: 0 auto 6px; padding: 10px 10px 0;
+  background: radial-gradient(circle at 50% 60%, #fff3c4 0 55%, transparent 56%);
+}
+.closed.holiday .art { animation: hop 1.6s ease-in-out infinite; }
+@keyframes hop { 50% { transform: translateY(-6px); } }
+.closed .twins { display: block; width: 100%; }
+.card.closed h2 { font-size: 34px; color: var(--pink); margin: 0; }
+.closed p { margin: 2px 0 0; font-size: 18px; color: var(--muted); }
 
 .missing { text-align: center; padding: 24px 16px; }
 .missing .big { font-size: 48px; }
 .missing p { font-size: 18px; margin: 8px 0 16px; }
 .btn {
-  display: inline-block; padding: 12px 18px; border-radius: 999px;
-  background: var(--accent); color: var(--bg); font-weight: 700; text-decoration: none;
+  display: inline-block; padding: 12px 18px; border-radius: 16px; border: 2.5px solid var(--edge); box-shadow: var(--pop);
+  background: var(--teal); color: #fff; font-weight: 700; text-decoration: none;
 }
 
 .foot {
-  max-width: 560px; margin: 0 auto; padding: 4px 16px 20px;
+  max-width: 560px; margin: 0 auto; padding: 0 16px 20px;
   font-size: 13px; color: var(--muted); text-align: center;
 }
 .foot a { color: inherit; }
 
+@media (prefers-reduced-motion: reduce) {
+  .closed.holiday .art, main.slide-l, main.slide-r { animation: none; }
+}
+
 /* Short phones (320×568 and similar): tighter so lunch fits on the first screen */
 @media (max-height: 700px) {
-  .top { padding-top: calc(6px + env(safe-area-inset-top)); }
-  .daybar { padding: 4px 12px; }
-  .arrow { width: 42px; height: 42px; font-size: 26px; }
+  .top { padding-top: calc(5px + env(safe-area-inset-top)); }
+  .brand { font-size: 17px; }
+  .brand .twins { width: 50px; height: 22px; }
+  .daybar { padding: 5px 12px 7px; }
+  .arrow { width: 42px; height: 42px; font-size: 28px; border-radius: 14px; }
   .date { font-size: 19px; }
-  .card { padding: 10px 14px; margin-bottom: 10px; }
-  .dishes li { padding: 6px 0; gap: 10px; }
-  .dishes .e { font-size: 24px; width: 28px; }
-  .dishes .t { font-size: 17px; }
+  .card { padding: 8px 10px 6px; margin-bottom: 12px; border-radius: 22px; }
+  .card h2 { font-size: 15px; margin-bottom: 5px; }
+  .dishes { gap: 5px; }
+  .dishes li { padding: 4px 8px 4px 4px; gap: 8px; border-radius: 16px; }
+  .dishes .e { width: 34px; height: 34px; font-size: 19px; }
+  .dishes .name { font-size: 16.5px; }
+  .dishes li.dessert .name, .dishes li.bread .name { font-size: 15.5px; }
+  .closed .art { width: 170px; }
 }
