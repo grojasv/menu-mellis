@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3f0e8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+  <title>Menú Mellis · Safata</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <span class="brand">MENÚ<b>MELLIS</b></span>
+    <div class="langs" role="group" aria-label="Language">
+      <button data-lang="ca">CA</button><button data-lang="es">ES</button><button data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <nav class="daybar">
+    <button class="arrow" id="prev" aria-label="Previous day">‹</button>
+    <div class="daytitle">
+      <span class="rel" id="rel"></span>
+      <span class="date" id="date"></span>
+    </div>
+    <button class="arrow" id="next" aria-label="Next day">›</button>
+  </nav>
+
+  <main id="day" aria-live="polite"></main>
+
+  <footer class="foot" id="foot"></footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

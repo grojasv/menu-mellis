@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Menú Mellis · Designs</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+  <style>
+    :root { --bg: #f4f1ea; --card: #fff; --ink: #222; --muted: #6b665e; --line: #e4ded2; --accent: #c4532d; }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) { --bg: #151413; --card: #211f1c; --ink: #f0ece4; --muted: #a39d91; --line: #35322c; --accent: #f08a5d; }
+    }
+    :root[data-theme="dark"] { --bg: #151413; --card: #211f1c; --ink: #f0ece4; --muted: #a39d91; --line: #35322c; --accent: #f08a5d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; overflow-x: hidden; }
+    header { max-width: 1240px; margin: 0 auto; padding: calc(16px + env(safe-area-inset-top)) 16px 4px; display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; }
+    h1 { margin: 0; font-size: 24px; }
+    header p { margin: 4px 0 0; color: var(--muted); max-width: 60ch; }
+    .langs { display: flex; gap: 4px; flex: none; }
+    .langs button { font: 600 13px/1 system-ui; border: 1px solid var(--line); background: transparent; color: var(--muted); border-radius: 999px; padding: 6px 10px; cursor: pointer; }
+    .langs button.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .grid { max-width: 1240px; margin: 0 auto; padding: 12px 16px 32px; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+    .opt { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+    .opt h2 { margin: 0; font-size: 20px; }
+    .opt h2 span { color: var(--accent); margin-right: 6px; }
+    .opt p { margin: 0; color: var(--muted); }
+    .phone { align-self: center; width: 302px; height: 562px; border-radius: 34px; border: 6px solid #1d1d1f; overflow: hidden; background: #1d1d1f; box-shadow: 0 12px 30px -16px rgb(0 0 0 / 50%); }
+    .phone iframe { width: 390px; height: 740px; border: 0; transform: scale(.7436); transform-origin: 0 0; display: block; border-radius: 28px; }
+    .go { align-self: stretch; text-align: center; padding: 12px; border-radius: 12px; background: var(--ink); color: var(--bg); font-weight: 700; text-decoration: none; }
+    .tries { font-size: 13px; color: var(--muted); text-align: center; }
+    .tries a { color: inherit; }
+    @media (max-width: 420px) { .phone { display: none; } }
+    footer { max-width: 1240px; margin: 0 auto; padding: 0 16px 32px; color: var(--muted); font-size: 14px; }
+    footer a { color: inherit; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 data-t="title"></h1>
+      <p data-t="intro"></p>
+    </div>
+    <div class="langs" role="group" aria-label="Language">
+      <button data-lang="ca">CA</button><button data-lang="es">ES</button><button data-lang="en">EN</button>
+    </div>
+  </header>
+  <main class="grid" id="grid"></main>
+  <footer><a href="../" data-t="live"></a></footer>
+  <script>
+    const LANGS = ['ca', 'es', 'en'];
+    const TEXT = {
+      title: { ca: 'Menú Mellis: tres looks nous', es: 'Menú Mellis: tres looks nuevos', en: 'Menú Mellis: three new looks' },
+      intro: {
+        ca: 'El mateix menú i el mateix funcionament (fletxes, lliscar, festius, sopar, idiomes), tres estils diferents. Prova’ls al mòbil i tria’n un, o barreja.',
+        es: 'El mismo menú y el mismo funcionamiento (flechas, deslizar, festivos, cena, idiomas), tres estilos distintos. Pruébalos en el móvil y elige uno, o mezcla.',
+        en: 'Same menu and same behaviour (arrows, swipe, holidays, dinner, languages), three different styles. Try them on your phone and pick one, or mix.',
+      },
+      open: { ca: 'Obre a pantalla completa', es: 'Abrir a pantalla completa', en: 'Open full screen' },
+      tries: { ca: 'Prova també:', es: 'Prueba también:', en: 'Also try:' },
+      holiday: { ca: 'un festiu (12 oct.)', es: 'un festivo (12 oct.)', en: 'a holiday (12 Oct)' },
+      diabetic: { ca: 'menú diabètic', es: 'menú diabético', en: 'diabetic menu' },
+      live: { ca: '← Web actual', es: '← Web actual', en: '← Current site' },
+    };
+    const DESIGNS = [
+      { id: 'a-mercat', letter: 'A', name: 'Mercat',
+        text: {
+          ca: 'Editorial de revista de cuina: tipografia amb serifa (Fraunces), terracota i safrà, cada plat amb la seva etiqueta (primer, segon…) i el sopar en una banda blau nit. Elegant i tranquil, pensat per a un adult.',
+          es: 'Editorial de revista de cocina: tipografía con serifa (Fraunces), terracota y azafrán, cada plato con su etiqueta (primero, segundo…) y la cena en una banda azul noche. Elegante y tranquilo, pensado para un adulto.',
+          en: 'Food-magazine editorial: serif type (Fraunces), terracotta and saffron, every dish labelled (starter, main…) and dinner in a night-blue band. Elegant and calm, made for a grown-up reader.',
+        } },
+      { id: 'b-laboratori', letter: 'B', name: 'Laboratori',
+        text: {
+          ca: 'El món de les mellis del Laboratori Mellis: les bessones científiques a la capçalera i als festius, colors de llaminadura, vores gruixudes i un color per plat. Divertit; les nenes també el voldran mirar.',
+          es: 'El mundo de las mellis del Laboratori Mellis: las gemelas científicas en la cabecera y en los festivos, colores de chuche, bordes gruesos y un color por plato. Divertido; las niñas también querrán mirarlo.',
+          en: 'The twins’ world from Laboratori Mellis: the scientist twins in the header and on holidays, candy colours, chunky outlines and one colour per course. Playful; the girls will want to look too.',
+        } },
+      { id: 'c-safata', letter: 'C', name: 'Safata',
+        text: {
+          ca: 'Una safata de dinar en blocs: rajoles de colors plans, emojis grans i lletra grotesca gruixuda. Primer i segon a tota amplada, guarnició i postres en dues peces. Modern, es llegeix d’un cop d’ull.',
+          es: 'Una bandeja de comida en bloques: baldosas de colores planos, emojis grandes y letra grotesca gruesa. Primero y segundo a todo el ancho, guarnición y postre en dos piezas. Moderno, se lee de un vistazo.',
+          en: 'A lunch tray in blocks: flat colour tiles, big emoji and heavy grotesque type. Starter and main full width, side and dessert as two tiles. Modern, read at a glance.',
+        } },
+    ];
+    const params = new URLSearchParams(location.search);
+    if (['light', 'dark'].includes(params.get('theme'))) document.documentElement.dataset.theme = params.get('theme');
+    const menu = params.get('menu');
+    const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
+    const guess = (navigator.language || '').slice(0, 2);
+    let lang = LANGS.includes(params.get('lang')) ? params.get('lang') : LANGS.includes(store.get('menu-mellis.lang')) ? store.get('menu-mellis.lang') : LANGS.includes(guess) ? guess : 'ca';
+    const t = (o) => o[lang] || o.ca;
+    const link = (id, extra = {}) => {
+      const q = new URLSearchParams({ ...(menu ? { menu } : {}), ...extra });
+      const s = q.toString();
+      return `${id}/${s ? `?${s}` : ''}`;
+    };
+    function render() {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-t]').forEach((n) => { n.textContent = t(TEXT[n.dataset.t]); });
+      document.querySelectorAll('.langs button').forEach((b) => b.classList.toggle('active', b.dataset.lang === lang));
+      document.getElementById('grid').innerHTML = DESIGNS.map((d) => `
+        <article class="opt">
+          <h2><span>${d.letter}</span>${d.name}</h2>
+          <p>${t(d.text)}</p>
+          <div class="phone"><iframe src="${link(d.id, { lang })}" title="${d.name}" loading="lazy"></iframe></div>
+          <a class="go" href="${link(d.id)}">${t(TEXT.open)} ↗</a>
+          <div class="tries">${t(TEXT.tries)} <a href="${link(d.id, { date: '2026-10-12' })}">${t(TEXT.holiday)}</a> · <a href="${link(d.id, { menu: 'diabetic-6r' })}">${t(TEXT.diabetic)}</a></div>
+        </article>`).join('');
+    }
+    document.querySelector('.langs').addEventListener('click', (e) => {
+      const b = e.target.closest('button[data-lang]');
+      if (!b) return;
+      lang = b.dataset.lang; store.set('menu-mellis.lang', lang); render();
+    });
+    render();
+  </script>
+</body>
+</html>

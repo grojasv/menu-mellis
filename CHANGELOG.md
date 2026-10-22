@@ -2,6 +2,10 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [Unreleased]
+### Added
+- `designs/`: three look prototypes for the Today screen to compare (A Mercat editorial, B Laboratori with the Mellis twins, C Safata bold tiles) and a comparison page. They load the real data; the live site is unchanged.
+
 ## [0.3.1] — 2026-10-22
 ### Fixed
 - The watcher failed on GitHub: cide.es lets a GitHub runner load one page, then blocks it (PDF download and later connections time out). It now loads only the menjador page and compares the PDF link with the site's `source.url`; the PDF is downloaded by `/update-menu` on the Mac. Limitation: a PDF replaced under the same filename isn't detected.
