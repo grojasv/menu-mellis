@@ -1,0 +1,1617 @@
+{
+ "month": "2026-10",
+ "source": {
+  "url": "https://www.cide.es/wp-content/uploads/2026/09/Menu-octubre-modificat.pdf",
+  "sha256": "acbf8dcced658e8d14a1453707d8d0633a500248290bd1c5ab3363502f66141b",
+  "processedAt": "2026-10-22T12:00:00+02:00"
+ },
+ "variants": {
+  "general": {
+   "days": {
+    "2026-10-01": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, tomàtiga, blat de les índies i formatge fresc",
+        "es": "Ensalada de lechuga, tomate, maíz y queso fresco",
+        "en": "Lettuce, tomato, sweetcorn and fresh cheese salad"
+       },
+       "allergens": [
+        7
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🍝",
+       "text": {
+        "ca": "Canelons de pollastre i porc",
+        "es": "Canelones de pollo y cerdo",
+        "en": "Chicken and pork cannelloni"
+       },
+       "allergens": [
+        1,
+        3,
+        6,
+        7
+       ]
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🐟",
+        "text": {
+         "ca": "Salmó al forn acompanyat de verdures i patata",
+         "es": "Salmón al horno acompañado de verduras y patata",
+         "en": "Oven-baked salmon with vegetables and potato"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-02": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🥔",
+       "text": {
+        "ca": "Ensaladilla casolana (pastanaga, pèsols, mongeta verda, patata, ou bullit, tonyina i maionesa)",
+        "es": "Ensaladilla casera (zanahoria, guisantes, judía verde, patata, huevo cocido, atún y mayonesa)",
+        "en": "Homemade Russian salad (carrot, peas, green beans, potato, boiled egg, tuna and mayonnaise)"
+       },
+       "allergens": [
+        3,
+        4,
+        7
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🐟",
+       "text": {
+        "ca": "Lluç a la planxa",
+        "es": "Merluza a la plancha",
+        "en": "Grilled hake"
+       },
+       "allergens": [
+        4
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, olives i pinya",
+        "es": "Ensalada de lechuga, aceitunas y piña",
+        "en": "Lettuce, olive and pineapple salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🥛",
+       "text": {
+        "ca": "Iogurt o fruita",
+        "es": "Yogur o fruta",
+        "en": "Yogurt or fruit"
+       },
+       "allergens": [
+        7
+       ]
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥣",
+        "text": {
+         "ca": "Crema de carabassa",
+         "es": "Crema de calabaza",
+         "en": "Pumpkin soup"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍳",
+        "text": {
+         "ca": "Truita de xampinyons",
+         "es": "Tortilla de champiñones",
+         "en": "Mushroom omelette"
+        },
+        "allergens": [
+         3
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-05": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🫘",
+       "text": {
+        "ca": "Cuinat de ciurons amb verdures",
+        "es": "Potaje de garbanzos con verduras",
+        "en": "Chickpea and vegetable stew"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🍗",
+       "text": {
+        "ca": "Pitrera de pollastre a la planxa",
+        "es": "Pechuga de pollo a la plancha",
+        "en": "Grilled chicken breast"
+       },
+       "allergens": []
+      },
+      {
+       "role": "side",
+       "emoji": "🥔",
+       "text": {
+        "ca": "Patates al vapor",
+        "es": "Patatas al vapor",
+        "en": "Steamed potatoes"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥒",
+        "text": {
+         "ca": "Carabassons farcits de verdura i tonyina acompanyats d'ensalada variada (brots tendres, tomàtiga cherry i pastanaga) amb quinoa",
+         "es": "Calabacines rellenos de verdura y atún acompañados de ensalada variada (brotes tiernos, tomate cherry y zanahoria) con quinoa",
+         "en": "Courgettes stuffed with vegetables and tuna, with mixed salad (baby leaves, cherry tomato and carrot) and quinoa"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-06": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🍝",
+       "text": {
+        "ca": "Macarrons amb salsa de tomàtiga i verdures",
+        "es": "Macarrones con salsa de tomate y verduras",
+        "en": "Macaroni with tomato and vegetable sauce"
+       },
+       "allergens": [
+        1,
+        3
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🐟",
+       "text": {
+        "ca": "Lluç a la planxa amb maionesa casolana",
+        "es": "Merluza a la plancha con mayonesa casera",
+        "en": "Grilled hake with homemade mayonnaise"
+       },
+       "allergens": [
+        4,
+        7
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, pastanaga i tomàtiga",
+        "es": "Ensalada de lechuga, zanahoria y tomate",
+        "en": "Lettuce, carrot and tomato salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥣",
+        "text": {
+         "ca": "Crema de verdures",
+         "es": "Crema de verduras",
+         "en": "Vegetable soup"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍳",
+        "text": {
+         "ca": "Remenat d'ou amb tomàtiga",
+         "es": "Huevos revueltos con tomate",
+         "en": "Scrambled eggs with tomato"
+        },
+        "allergens": [
+         3
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-07": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🍚",
+       "text": {
+        "ca": "Arròs brut o gaspatxo casolà",
+        "es": "Arroz brut o gazpacho casero",
+        "en": "Arròs brut (Mallorcan rice stew) or homemade gazpacho"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🍳",
+       "text": {
+        "ca": "Truita de patates amb ceba",
+        "es": "Tortilla de patatas con cebolla",
+        "en": "Potato and onion omelette"
+       },
+       "allergens": [
+        3
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, cogombre, blat de les índies i olives",
+        "es": "Ensalada de lechuga, pepino, maíz y aceitunas",
+        "en": "Lettuce, cucumber, sweetcorn and olive salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥣",
+        "text": {
+         "ca": "Sopa de verdures amb pasta integral",
+         "es": "Sopa de verduras con pasta integral",
+         "en": "Vegetable soup with wholewheat pasta"
+        },
+        "allergens": [
+         1
+        ]
+       },
+       {
+        "emoji": "🍗",
+        "text": {
+         "ca": "Pitrera d'indiot a la planxa",
+         "es": "Pechuga de pavo a la plancha",
+         "en": "Grilled turkey breast"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-08": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de mongetes blanques (tomàtiga, ceba, pastanaga i pebre verd)",
+        "es": "Ensalada de judías blancas (tomate, cebolla, zanahoria y pimiento verde)",
+        "en": "White bean salad (tomato, onion, carrot and green pepper)"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🍲",
+       "text": {
+        "ca": "Estofat de vedella o de pollastre",
+        "es": "Estofado de ternera o de pollo",
+        "en": "Beef or chicken stew"
+       },
+       "allergens": []
+      },
+      {
+       "role": "side",
+       "emoji": "🍚",
+       "text": {
+        "ca": "Arròs integral pilaf",
+        "es": "Arroz integral pilaf",
+        "en": "Brown rice pilaf"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥣",
+        "text": {
+         "ca": "Gaspatxo",
+         "es": "Gazpacho",
+         "en": "Gazpacho"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍳",
+        "text": {
+         "ca": "Truita de patates i espinacs",
+         "es": "Tortilla de patatas y espinacas",
+         "en": "Potato and spinach omelette"
+        },
+        "allergens": [
+         3
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-09": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🥣",
+       "text": {
+        "ca": "Crema de carabassa amb crostons al forn o sopes mallorquines",
+        "es": "Crema de calabaza con crostones al horno o sopas mallorquinas",
+        "en": "Pumpkin soup with baked croutons or sopes mallorquines (Mallorcan bread and vegetable soup)"
+       },
+       "allergens": [
+        1
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🐟",
+       "text": {
+        "ca": "Lluç arrebossat casolà",
+        "es": "Merluza empanada casera",
+        "en": "Homemade breaded hake"
+       },
+       "allergens": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga i tomàtiga",
+        "es": "Ensalada de lechuga y tomate",
+        "en": "Lettuce and tomato salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🥛",
+       "text": {
+        "ca": "Iogurt o fruita",
+        "es": "Yogur o fruta",
+        "en": "Yogurt or fruit"
+       },
+       "allergens": [
+        7
+       ]
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🍗",
+        "text": {
+         "ca": "Pollastre al curry amb xampinyons acompanyat d'arròs",
+         "es": "Pollo al curry con champiñones acompañado de arroz",
+         "en": "Chicken curry with mushrooms and rice"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-12": {
+     "status": "holiday",
+     "courses": [],
+     "dinner": null
+    },
+    "2026-10-13": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🫘",
+       "text": {
+        "ca": "Cuinat de llenties amb verdures",
+        "es": "Potaje de lentejas con verduras",
+        "en": "Lentil and vegetable stew"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🐟",
+       "text": {
+        "ca": "Lluç arrebossat casolà",
+        "es": "Merluza empanada casera",
+        "en": "Homemade breaded hake"
+       },
+       "allergens": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, cogombre, blat de les índies i pinya",
+        "es": "Ensalada de lechuga, pepino, maíz y piña",
+        "en": "Lettuce, cucumber, sweetcorn and pineapple salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🌯",
+        "text": {
+         "ca": "Wrap a la planxa amb truita, carabassó, espinacs i tomàtiga",
+         "es": "Wrap a la plancha con tortilla, calabacín, espinacas y tomate",
+         "en": "Grilled wrap with omelette, courgette, spinach and tomato"
+        },
+        "allergens": [
+         1,
+         3
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-14": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🍚",
+       "text": {
+        "ca": "Arròs de brou de peix i marisc",
+        "es": "Arroz caldoso de pescado y marisco",
+        "en": "Brothy fish and seafood rice"
+       },
+       "allergens": [
+        2,
+        4,
+        14
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🍗",
+       "text": {
+        "ca": "Contracuixa de pollastre al forn",
+        "es": "Contramuslo de pollo al horno",
+        "en": "Oven-baked chicken thigh"
+       },
+       "allergens": []
+      },
+      {
+       "role": "side",
+       "emoji": "🍅",
+       "text": {
+        "ca": "Tomàtiga trempada",
+        "es": "Tomate aliñado",
+        "en": "Dressed tomato salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🐟",
+        "text": {
+         "ca": "Bullit de rap (amb patata, mongetes tendres, bròquil i pastanaga)",
+         "es": "Bullit de rape (con patata, judías verdes, brócoli y zanahoria)",
+         "en": "Poached monkfish (with potato, green beans, broccoli and carrot)"
+        },
+        "allergens": [
+         4
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-15": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🫘",
+       "text": {
+        "ca": "Cuinat de ciurons amb verdures",
+        "es": "Potaje de garbanzos con verduras",
+        "en": "Chickpea and vegetable stew"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🐟",
+       "text": {
+        "ca": "Lluç a la planxa amb salsa de tomàtiga i pebres",
+        "es": "Merluza a la plancha con salsa de tomate y pimientos",
+        "en": "Grilled hake with tomato and pepper sauce"
+       },
+       "allergens": [
+        4
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥔",
+       "text": {
+        "ca": "Patates al vapor",
+        "es": "Patatas al vapor",
+        "en": "Steamed potatoes"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🍳",
+        "text": {
+         "ca": "Truita de patata, ceba i colflori acompanyada d'ensalada variada (canonges, tomàtiga, alvocat i pastanaga)",
+         "es": "Tortilla de patata, cebolla y coliflor acompañada de ensalada variada (canónigos, tomate, aguacate y zanahoria)",
+         "en": "Potato, onion and cauliflower omelette with mixed salad (lamb's lettuce, tomato, avocado and carrot)"
+        },
+        "allergens": [
+         3
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-16": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🍝",
+       "text": {
+        "ca": "Macarrons a la bolonyesa",
+        "es": "Macarrones a la boloñesa",
+        "en": "Macaroni bolognese"
+       },
+       "allergens": [
+        1,
+        3
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🍳",
+       "text": {
+        "ca": "Truita de patates",
+        "es": "Tortilla de patatas",
+        "en": "Potato omelette"
+       },
+       "allergens": [
+        3
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, pastanaga i olives",
+        "es": "Ensalada de lechuga, zanahoria y aceitunas",
+        "en": "Lettuce, carrot and olive salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🥛",
+       "text": {
+        "ca": "Iogurt o fruita",
+        "es": "Yogur o fruta",
+        "en": "Yogurt or fruit"
+       },
+       "allergens": [
+        7
+       ]
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🐟",
+        "text": {
+         "ca": "Salmó a la planxa acompanyat de gírgoles a la planxa i quinoa",
+         "es": "Salmón a la plancha acompañado de setas de cardo a la plancha y quinoa",
+         "en": "Grilled salmon with grilled oyster mushrooms and quinoa"
+        },
+        "allergens": [
+         4
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-19": {
+     "status": "no-classes",
+     "courses": [],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥣",
+        "text": {
+         "ca": "Crema de xampinyons",
+         "es": "Crema de champiñones",
+         "en": "Mushroom soup"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍳",
+        "text": {
+         "ca": "Truita a la francesa",
+         "es": "Tortilla francesa",
+         "en": "Plain omelette"
+        },
+        "allergens": [
+         3
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-20": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🫘",
+       "text": {
+        "ca": "Cuinat de llenties amb verdures",
+        "es": "Potaje de lentejas con verduras",
+        "en": "Lentil and vegetable stew"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🐟",
+       "text": {
+        "ca": "Lluç arrebossat casolà",
+        "es": "Merluza empanada casera",
+        "en": "Homemade breaded hake"
+       },
+       "allergens": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, blat de les índies i olives",
+        "es": "Ensalada de lechuga, maíz y aceitunas",
+        "en": "Lettuce, sweetcorn and olive salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🍝",
+        "text": {
+         "ca": "Espaguetis integrals amb salsa de tomàtiga i carabassa rostida amb ametlles i formatge feta",
+         "es": "Espaguetis integrales con salsa de tomate y calabaza asada con almendras y queso feta",
+         "en": "Wholewheat spaghetti with tomato sauce, roasted pumpkin, almonds and feta"
+        },
+        "allergens": [
+         1,
+         7,
+         8
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-21": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🍝",
+       "text": {
+        "ca": "Macarrons integrals amb salsa de tomàtiga i verdures",
+        "es": "Macarrones integrales con salsa de tomate y verduras",
+        "en": "Wholewheat macaroni with tomato and vegetable sauce"
+       },
+       "allergens": [
+        1,
+        3
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🍳",
+       "text": {
+        "ca": "Truita de patates amb ceba",
+        "es": "Tortilla de patatas con cebolla",
+        "en": "Potato and onion omelette"
+       },
+       "allergens": [
+        3
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, tomàtiga, pastanaga i cogombre",
+        "es": "Ensalada de lechuga, tomate, zanahoria y pepino",
+        "en": "Lettuce, tomato, carrot and cucumber salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🍆",
+        "text": {
+         "ca": "Albergínies farcides de soja texturitzada acompanyades de tomàtiga trempada i moniato rostit",
+         "es": "Berenjenas rellenas de soja texturizada acompañadas de tomate aliñado y boniato asado",
+         "en": "Aubergines stuffed with textured soy, with dressed tomato and roast sweet potato"
+        },
+        "allergens": [
+         6
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-22": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🥣",
+       "text": {
+        "ca": "Crema de carabassó amb crostons al forn",
+        "es": "Crema de calabacín con crostones al horno",
+        "en": "Courgette soup with baked croutons"
+       },
+       "allergens": [
+        1
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🍗",
+       "text": {
+        "ca": "Pitrera de pollastre a la planxa",
+        "es": "Pechuga de pollo a la plancha",
+        "en": "Grilled chicken breast"
+       },
+       "allergens": []
+      },
+      {
+       "role": "side",
+       "emoji": "🍚",
+       "text": {
+        "ca": "Arròs integral pilaf",
+        "es": "Arroz integral pilaf",
+        "en": "Brown rice pilaf"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥘",
+        "text": {
+         "ca": "Tumbet de llom (amb patata, albergínia, carabassó, pebre vermell i salsa de tomàtiga)",
+         "es": "Tumbet de lomo (con patata, berenjena, calabacín, pimiento rojo y salsa de tomate)",
+         "en": "Pork loin tumbet (with potato, aubergine, courgette, red pepper and tomato sauce)"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-23": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🫘",
+       "text": {
+        "ca": "Ciurons amb trempó",
+        "es": "Garbanzos con trempó",
+        "en": "Chickpeas with trempó (Mallorcan tomato, pepper and onion salad)"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🧆",
+       "text": {
+        "ca": "Pilotes casolanes de vedella i porc",
+        "es": "Albóndigas caseras de ternera y cerdo",
+        "en": "Homemade beef and pork meatballs"
+       },
+       "allergens": [
+        1,
+        3
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥕",
+       "text": {
+        "ca": "Pastanaga al vapor",
+        "es": "Zanahoria al vapor",
+        "en": "Steamed carrots"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🥛",
+       "text": {
+        "ca": "Iogurt o fruita",
+        "es": "Yogur o fruta",
+        "en": "Yogurt or fruit"
+       },
+       "allergens": [
+        7
+       ]
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🌯",
+        "text": {
+         "ca": "Wrap d'espinacs amb salmó fumat, formatge i tomàtiga",
+         "es": "Wrap de espinacas con salmón ahumado, queso y tomate",
+         "en": "Spinach wrap with smoked salmon, cheese and tomato"
+        },
+        "allergens": [
+         1,
+         4,
+         7
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-26": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🍝",
+       "text": {
+        "ca": "Caracolas a la carbonara",
+        "es": "Caracolas a la carbonara",
+        "en": "Pasta shells carbonara"
+       },
+       "allergens": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🍗",
+       "text": {
+        "ca": "Pitrera de pollastre a la planxa",
+        "es": "Pechuga de pollo a la plancha",
+        "en": "Grilled chicken breast"
+       },
+       "allergens": []
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, tomàtiga i ceba vermella",
+        "es": "Ensalada de lechuga, tomate y cebolla roja",
+        "en": "Lettuce, tomato and red onion salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥣",
+        "text": {
+         "ca": "Crema de verdures",
+         "es": "Crema de verduras",
+         "en": "Vegetable soup"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🐟",
+        "text": {
+         "ca": "Salmó a la planxa",
+         "es": "Salmón a la plancha",
+         "en": "Grilled salmon"
+        },
+        "allergens": [
+         4
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-27": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🫘",
+       "text": {
+        "ca": "Cuinat de llenties amb verdures",
+        "es": "Potaje de lentejas con verduras",
+        "en": "Lentil and vegetable stew"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🍳",
+       "text": {
+        "ca": "Truita de patates amb ceba",
+        "es": "Tortilla de patatas con cebolla",
+        "en": "Potato and onion omelette"
+       },
+       "allergens": [
+        3
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga, cogombre, pinya i olives",
+        "es": "Ensalada de lechuga, pepino, piña y aceitunas",
+        "en": "Lettuce, cucumber, pineapple and olive salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🍚",
+        "text": {
+         "ca": "Arròs saltejat amb verdures (bròquil, ceba i pastanaga) amb gambes",
+         "es": "Arroz salteado con verduras (brócoli, cebolla y zanahoria) y gambas",
+         "en": "Stir-fried rice with vegetables (broccoli, onion and carrot) and prawns"
+        },
+        "allergens": [
+         2
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-28": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🥣",
+       "text": {
+        "ca": "Sopa de bullit amb pasta integral",
+        "es": "Sopa de cocido con pasta integral",
+        "en": "Meat broth soup with wholewheat pasta"
+       },
+       "allergens": [
+        1,
+        3,
+        9
+       ]
+      },
+      {
+       "role": "second",
+       "emoji": "🐟",
+       "text": {
+        "ca": "Lluç arrebossat casolà",
+        "es": "Merluza empanada casera",
+        "en": "Homemade breaded hake"
+       },
+       "allergens": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥦",
+       "text": {
+        "ca": "Minestra de verdures",
+        "es": "Menestra de verduras",
+        "en": "Mixed vegetable medley"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🍔",
+        "text": {
+         "ca": "Hamburguesa casolana de vedella acompanyada de verdures rostides (pebres, albergínia i carabassó) i moniato",
+         "es": "Hamburguesa casera de ternera acompañada de verduras asadas (pimientos, berenjena y calabacín) y boniato",
+         "en": "Homemade beef burger with roast vegetables (peppers, aubergine and courgette) and sweet potato"
+        },
+        "allergens": []
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-29": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de ciurons (tomàtiga, pebre verd, ceba vermella i olives)",
+        "es": "Ensalada de garbanzos (tomate, pimiento verde, cebolla roja y aceitunas)",
+        "en": "Chickpea salad (tomato, green pepper, red onion and olives)"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🍲",
+       "text": {
+        "ca": "Estofat d'indiot amb verdures",
+        "es": "Estofado de pavo con verduras",
+        "en": "Turkey and vegetable stew"
+       },
+       "allergens": []
+      },
+      {
+       "role": "side",
+       "emoji": "🥔",
+       "text": {
+        "ca": "Patates al vapor",
+        "es": "Patatas al vapor",
+        "en": "Steamed potatoes"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🍎",
+       "text": {
+        "ca": "Fruita",
+        "es": "Fruta",
+        "en": "Fruit"
+       },
+       "allergens": []
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🥧",
+        "text": {
+         "ca": "Quiche de porros acompanyada d'ensalada de tomàtiga i cogombre",
+         "es": "Quiche de puerros acompañada de ensalada de tomate y pepino",
+         "en": "Leek quiche with tomato and cucumber salad"
+        },
+        "allergens": [
+         1,
+         3,
+         7
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    },
+    "2026-10-30": {
+     "status": "school",
+     "courses": [
+      {
+       "role": "first",
+       "emoji": "🥘",
+       "text": {
+        "ca": "Paella de pollastre, porc i verdures",
+        "es": "Paella de pollo, cerdo y verduras",
+        "en": "Chicken, pork and vegetable paella"
+       },
+       "allergens": []
+      },
+      {
+       "role": "second",
+       "emoji": "🐟",
+       "text": {
+        "ca": "Raoles casolanes de lluç i calamar a la planxa",
+        "es": "Raolas caseras de merluza y calamar a la plancha",
+        "en": "Homemade hake and squid patties (raoles), grilled"
+       },
+       "allergens": [
+        1,
+        3,
+        4,
+        14
+       ]
+      },
+      {
+       "role": "side",
+       "emoji": "🥗",
+       "text": {
+        "ca": "Ensalada de lletuga i tomàtiga",
+        "es": "Ensalada de lechuga y tomate",
+        "en": "Lettuce and tomato salad"
+       },
+       "allergens": []
+      },
+      {
+       "role": "dessert",
+       "emoji": "🥛",
+       "text": {
+        "ca": "Iogurt o fruita",
+        "es": "Yogur o fruta",
+        "en": "Yogurt or fruit"
+       },
+       "allergens": [
+        7
+       ]
+      }
+     ],
+     "dinner": {
+      "items": [
+       {
+        "emoji": "🍳",
+        "text": {
+         "ca": "Ous a la planxa amb patates fregides acompanyats de verdures a la planxa",
+         "es": "Huevos a la plancha con patatas fritas acompañados de verduras a la plancha",
+         "en": "Fried eggs with chips and grilled vegetables"
+        },
+        "allergens": [
+         3
+        ]
+       },
+       {
+        "emoji": "🍎",
+        "text": {
+         "ca": "Fruita",
+         "es": "Fruta",
+         "en": "Fruit"
+        },
+        "allergens": []
+       }
+      ],
+      "fromGeneral": false
+     }
+    }
+   }
+  }
+ }
+}

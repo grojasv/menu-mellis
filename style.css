@@ -1,0 +1,132 @@
+:root {
+  --bg: #f7f4ee;
+  --card: #ffffff;
+  --ink: #23211d;
+  --muted: #6f6a60;
+  --line: #e7e1d6;
+  --accent: #3f7d4e;
+  --accent-soft: #e4efe4;
+  --night: #3d4a7a;
+  --night-soft: #e7e9f4;
+  --shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 4px 14px rgb(0 0 0 / 5%);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b1a17;
+    --card: #26241f;
+    --ink: #efebe3;
+    --muted: #a39d91;
+    --line: #38352e;
+    --accent: #8cc79a;
+    --accent-soft: #2a3a2d;
+    --night: #a9b4e6;
+    --night-soft: #2b2f42;
+    --shadow: none;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.35 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+
+.top {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: calc(10px + env(safe-area-inset-top)) 16px 4px;
+  max-width: 560px; margin: 0 auto;
+}
+.brand, .card h2 { word-spacing: .2em; }
+.brand { font-weight: 700; font-size: 15px; color: var(--muted); }
+.langs { display: flex; gap: 4px; }
+.langs button {
+  border: 1px solid var(--line); background: transparent; border-radius: 999px;
+  padding: 4px 10px; font-size: 13px; font-weight: 600; color: var(--muted);
+}
+.langs button.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.daybar {
+  position: sticky; top: 0; z-index: 2;
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px; background: var(--bg);
+  max-width: 560px; margin: 0 auto;
+}
+.arrow {
+  flex: none; width: 48px; height: 48px; border-radius: 50%;
+  border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow);
+  font-size: 30px; line-height: 1; padding-bottom: 4px;
+}
+.arrow:disabled { opacity: .3; cursor: default; }
+.daytitle { flex: 1; text-align: center; min-width: 0; }
+.rel {
+  display: block; font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--accent); min-height: 1.2em;
+}
+.date { display: block; font-size: 22px; font-weight: 700; }
+.date::first-letter { text-transform: uppercase; }
+
+main {
+  max-width: 560px; margin: 0 auto; padding: 4px 16px 8px;
+  touch-action: pan-y;
+}
+main.slide-l { animation: slide-l .22s ease-out; }
+main.slide-r { animation: slide-r .22s ease-out; }
+@keyframes slide-l { from { opacity: 0; transform: translateX(24px); } }
+@keyframes slide-r { from { opacity: 0; transform: translateX(-24px); } }
+
+.card {
+  background: var(--card); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 14px 16px; margin-bottom: 12px;
+}
+.card h2 {
+  margin: 0 0 6px; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent);
+}
+.card.dinner h2 { color: var(--night); }
+.card.dinner { background: var(--night-soft); box-shadow: none; }
+
+.dishes { list-style: none; margin: 0; padding: 0; }
+.dishes li {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 9px 0; border-top: 1px solid var(--line);
+}
+.dishes li:first-child { border-top: 0; }
+.dishes .e { font-size: 28px; line-height: 1; width: 34px; text-align: center; flex: none; }
+.dishes .t { font-size: 19px; padding-top: 2px; }
+.dishes .t small { display: block; font-size: 14px; color: var(--muted); }
+.dishes li.dessert .t { font-size: 16px; color: var(--muted); padding-top: 5px; }
+
+.closed { text-align: center; padding: 28px 16px; }
+.closed .big { font-size: 56px; line-height: 1; }
+.closed p { margin: 10px 0 0; font-size: 20px; font-weight: 600; }
+
+.missing { text-align: center; padding: 24px 16px; }
+.missing .big { font-size: 48px; }
+.missing p { font-size: 18px; margin: 8px 0 16px; }
+.btn {
+  display: inline-block; padding: 12px 18px; border-radius: 999px;
+  background: var(--accent); color: var(--bg); font-weight: 700; text-decoration: none;
+}
+
+.foot {
+  max-width: 560px; margin: 0 auto; padding: 4px 16px 20px;
+  font-size: 13px; color: var(--muted); text-align: center;
+}
+.foot a { color: inherit; }
+
+/* Short phones (320×568 and similar): tighter so lunch fits on the first screen */
+@media (max-height: 700px) {
+  .top { padding-top: calc(6px + env(safe-area-inset-top)); }
+  .daybar { padding: 4px 12px; }
+  .arrow { width: 42px; height: 42px; font-size: 26px; }
+  .date { font-size: 19px; }
+  .card { padding: 10px 14px; margin-bottom: 10px; }
+  .dishes li { padding: 6px 0; gap: 10px; }
+  .dishes .e { font-size: 24px; width: 28px; }
+  .dishes .t { font-size: 17px; }
+}
