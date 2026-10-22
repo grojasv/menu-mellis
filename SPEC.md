@@ -28,7 +28,7 @@ Refined with Guille on 2026-10-22.
 │ GitHub Action        │ ───────────────▶ │ Guille: `claude` in repo           │
 │ watch-menu.yml       │  to the phone    │ → /update-menu                     │
 │ curl page → find PDF │                  │ download · split pages · Claude    │
-│ sha256 ≠ data? alert │                  │ reads · JSON · validate · commit   │
+│ link not in data?    │                  │ reads · JSON · validate · commit   │
 └──────────────────────┘                  └────────────────────────────────────┘
 ```
 
@@ -36,7 +36,8 @@ Refined with Guille on 2026-10-22.
 - Cron daily ~07:00 Madrid + manual `workflow_dispatch`.
 - `curl` the menjador page, take the `<a href>` whose filename matches `menu` and is **not** `Berenars`/`Resolucio`.
   Filename and upload folder change every month (`/2026/09/Menu-octubre-modificat.pdf`), so never build the URL.
-- Download, `sha256sum`, compare with `source.sha256` in the newest `data/*.json`. Same → exit quietly.
+- Compare the link with `source.url` of every `data/*.json`. Known → exit quietly (0.3.1: no download, cide.es
+  blocks GitHub runners after one request; `/update-menu` checks `sha256` on the Mac).
 - Different → open an issue "New CIDE menu PDF: <filename>" with the link, **only if no such issue is already open**
   (otherwise update its body). `/update-menu` closes it.
 - Why daily and not day 1–2: the October PDF was replaced on 19 Oct ("modificat"); new months may also arrive late
@@ -142,7 +143,9 @@ Re-check when "Berenars-2027-28.pdf" appears.
 2. ✅ `/update-menu` command + validator → full October file, all 15 variants (0.2.0). Source format: general in
    full + each variant as differences from a base (`data/src/`), expanded by `scripts/build-month.mjs`.
 3. ✅ Watcher Action + issue flow (0.3.0): daily at 05:00 UTC, `scripts/watch-menu.mjs`; one open issue at a time,
-   updated if the PDF is replaced again; leftover issues closed once the PDF is processed.
+   updated if the PDF is replaced again; leftover issues closed once the PDF is processed. Since 0.3.1 it compares
+   the PDF **link** only: cide.es blocks GitHub runners after their first request, so the PDF itself can't be
+   downloaded there. A PDF replaced under the same filename isn't detected (so far changes came as new files).
 4. PWA + stale banner + berenars + variant picker. Service worker network-first for all of `data/*.json`
    (incl. `variants.json`); load only the current month and its neighbours instead of every month in `index.json`.
 5. First real run on the November PDF.

@@ -2,6 +2,11 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [0.3.1] — 2026-10-22
+### Fixed
+- The watcher failed on GitHub: cide.es lets a GitHub runner load one page, then blocks it (PDF download and later connections time out). It now loads only the menjador page and compares the PDF link with the site's `source.url`; the PDF is downloaded by `/update-menu` on the Mac. Limitation: a PDF replaced under the same filename isn't detected.
+- Fetches to cide.es have a 30 s timeout, 3 tries and name the failing URL; the Action prints a connection diagnosis when it fails.
+
 ## [0.3.0] — 2026-10-22
 ### Added
 - **Watch CIDE menu** GitHub Action (`.github/workflows/watch-menu.yml`, every day 05:00 UTC + manual run): finds the menu PDF on the school page and, if it isn't in the site yet, opens one `menu-pdf` issue assigned to @grojasv with the link and "run `/update-menu`". The same issue is updated if the school replaces the PDF again; open issues are closed once the PDF is processed. No API key involved.

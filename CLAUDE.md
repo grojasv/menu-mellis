@@ -3,12 +3,12 @@
 Phone-first page with the CIDE school lunch for today (+ dinner idea), from the monthly menu PDF. Plain HTML/CSS/JS, no build step, GitHub Pages under `/menu-mellis/` (relative paths only). Plan and roadmap: `SPEC.md`.
 
 ## Data
-Update flow: the daily Action `.github/workflows/watch-menu.yml` (`scripts/watch-menu.mjs`) opens a `menu-pdf` issue when the school's PDF changes → Guille runs `/update-menu` (`.claude/commands/update-menu.md`), which closes it. Pipeline: `scripts/fetch-menu.mjs` → `scripts/split-pdf.py` → Claude writes `data/src/YYYY-MM.json` → `scripts/build-month.mjs` → `scripts/validate.mjs`.
+Update flow: the daily Action `.github/workflows/watch-menu.yml` (`scripts/watch-menu.mjs`) opens a `menu-pdf` issue when the school's page links a menu PDF the site doesn't have (it compares the link with `source.url` and never downloads the PDF: cide.es blocks GitHub's servers after one request) → Guille runs `/update-menu` (`.claude/commands/update-menu.md`), which closes it. Pipeline: `scripts/fetch-menu.mjs` → `scripts/split-pdf.py` → Claude writes `data/src/YYYY-MM.json` → `scripts/build-month.mjs` → `scripts/validate.mjs`.
 
 - `data/variants.json`: the canonical menus (id, PDF title, name in CA/ES/EN). Ids are fixed slugs; never rename one (phones remember them). A new or dropped menu in the PDF is a decision for Guille.
 - `data/src/YYYY-MM.json`: **the source of truth, written by Claude from the PDF**. The general menu in full, every other variant as differences from a `base` (format at the top of `scripts/build-month.mjs`). Review data changes here.
 - `data/YYYY-MM.json`: generated (minified), what the app loads. Never edit by hand.
-  - `source`: `{ url, sha256, processedAt }` of the PDF it came from (the watcher compares `sha256`).
+  - `source`: `{ url, sha256, processedAt }` of the PDF it came from (the watcher compares `url`; `/update-menu` compares `sha256`).
   - `variants.<id>.days["YYYY-MM-DD"]`: `{ status, courses, dinner }`
     - `status`: `school` | `holiday` (FESTIU) | `no-classes` (CLASSES SUSPESES). Non-school days have `courses: []`.
     - `courses[]`: `{ role: first|second|side|dessert|bread, emoji, text: {ca,es,en}, allergens: [1–14], note?, changed? }`. `note` = diabetic portions (`3R: 195 g …`). `changed` (non-general variants) = differs from the general menu's course.

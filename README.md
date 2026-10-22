@@ -15,7 +15,7 @@ Data comes from the school's monthly menu PDF on the [menjador page](https://www
 - `.claude/commands/update-menu.md`: the `/update-menu` command that does a monthly update with Claude Code.
 
 ## Monthly update
-Every morning the **Watch CIDE menu** Action checks the school page. When the menu PDF changes it opens an issue (label `menu-pdf`, assigned to @grojasv). Then open Claude Code in this folder and run `/update-menu`; it closes the issue when done. Needs Node 22+ and [uv](https://docs.astral.sh/uv/).
+Every morning the **Watch CIDE menu** Action checks the school page. When the page links a new menu PDF (it compares the link only) it opens an issue (label `menu-pdf`, assigned to @grojasv). Then open Claude Code in this folder and run `/update-menu`; it closes the issue when done. Needs Node 22+ and [uv](https://docs.astral.sh/uv/).
 
 Add `?menu=<id>` to the URL to see another menu (ids in `data/variants.json`) until the menu picker exists.
 

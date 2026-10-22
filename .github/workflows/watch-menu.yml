@@ -1,6 +1,7 @@
 name: Watch CIDE menu
 
-# Every morning: is there a new menu PDF on the school page? If so, open an issue (assigned to Guille) asking to
+# Every morning: does the school page link a menu PDF the site doesn't have? (Link only: cide.es blocks GitHub
+# runners after one request, so the PDF itself is downloaded later by /update-menu on the Mac.) If so, open an issue (assigned to Guille) asking to
 # run /update-menu in Claude Code. No API key here: Claude reads the PDF on Guille's Mac.
 on:
   schedule:
