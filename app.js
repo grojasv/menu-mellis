@@ -75,8 +75,8 @@
   }
 
   function dishList(items, withRoles) {
-    return `<ol class="dishes">${items.map((c) => `
-      <li class="${withRoles ? c.role : ''}"><span class="e" aria-hidden="true">${c.emoji}</span>
+    return `<ol class="dishes">${items.map((c, i) => `
+      <li class="${withRoles ? c.role : ''}" style="--i:${i}"><span class="e" aria-hidden="true">${c.emoji}</span>
       <span class="t"><span class="name">${esc(t(c.text))}</span>${c.note ? `<small>${esc(t(c.note))}</small>` : ''}</span></li>`).join('')}</ol>`;
   }
 
@@ -142,37 +142,58 @@
       } else {
         const holiday = day.status === 'holiday';
         const [title, label] = holiday ? [TEXT.holidayTitle, TEXT.holiday] : [TEXT.noClassesTitle, TEXT.noClasses];
-        html += `<section class="card closed ${holiday ? 'holiday' : ''}"><div class="art">${twinsSVG({ cheer: holiday })}</div>
+        const confetti = holiday ? `<div class="confetti" aria-hidden="true">${Array.from({ length: 14 }, (_, i) =>
+          `<i style="--x:${(i * 37) % 100}%;--d:${(i % 5) * 0.12}s;--r:${(i * 53) % 360}deg"></i>`).join('')}</div>` : '';
+        html += `<section class="card closed ${holiday ? 'holiday' : ''}">${confetti}<div class="art">${twinsSVG({ cheer: holiday })}</div>
           <h2>${esc(t(title))}</h2><p>${esc(t(label))}</p></section>`;
       }
       if (day.dinner) {
         const from = day.dinner.fromGeneral ? `<p class="from">${esc(t(TEXT.fromGeneral))}</p>` : '';
-        html += `<section class="card dinner"><h2><span aria-hidden="true">🌙</span> ${esc(t(TEXT.dinner))}</h2>${dishList(day.dinner.items, false)}${from}</section>`;
+        html += `<section class="card dinner" style="--c:1"><h2><span aria-hidden="true">🌙</span> ${esc(t(TEXT.dinner))}</h2>${dishList(day.dinner.items, false)}${from}</section>`;
       }
       el.day.innerHTML = html;
       el.foot.innerHTML = `${esc(t(variantName))} · <a href="${source.url}" target="_blank" rel="noopener">${esc(t(TEXT.pdf))} ↗</a>`;
     }
 
-    if (dir) {
-      el.day.classList.remove('slide-l', 'slide-r');
-      void el.day.offsetWidth; // restart the animation
-      el.day.classList.add(dir > 0 ? 'slide-l' : 'slide-r');
-    }
+    if (dir) animateIn(dir === 'up' ? 'from-up' : dir > 0 ? 'from-r' : 'from-l');
   }
 
+  // Animations: cards bounce in (from below on load, from the side we're heading to on a day change),
+  // dishes pop in one by one; the old day flies out first. CSS does the rest (main.anim in style.css).
+  const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function animateIn(cls) {
+    if (REDUCED) return;
+    el.day.classList.remove('anim', 'from-l', 'from-r', 'from-up');
+    for (const n of [el.rel, el.date]) n.classList.remove('tick');
+    void el.day.offsetWidth; // restart the animations
+    el.day.classList.add('anim', cls);
+    for (const n of [el.rel, el.date]) n.classList.add('tick');
+  }
+
+  let leaving = null; // timer of the fly-out before the next day renders
   function go(step) {
     const next = Math.min(days.length, Math.max(0, pos + step));
-    if (next === pos) return;
+    if (next === pos) { springBack(); return; }
     pos = next;
-    render(step);
+    if (REDUCED) { render(step); return; }
+    clearTimeout(leaving);
+    const s = el.day.style;
+    s.transition = 'transform .14s ease-in, opacity .14s ease-in';
+    s.transform = `translateX(${step > 0 ? -56 : 56}px) rotate(${step > 0 ? -2 : 2}deg)`;
+    s.opacity = '0';
+    leaving = setTimeout(() => { s.transition = 'none'; s.transform = ''; s.opacity = ''; render(step); }, 140);
+  }
+  function springBack() {
+    el.day.style.transition = 'transform .35s cubic-bezier(.3, 1.6, .5, 1)';
+    el.day.style.transform = '';
   }
 
-  function setLang(next) {
+  function setLang(next, intro) {
     lang = next;
     store.set('menu-mellis.lang', next);
     document.documentElement.lang = next;
     document.querySelectorAll('.langs button').forEach((b) => b.classList.toggle('active', b.dataset.lang === next));
-    render();
+    render(intro ? 'up' : undefined);
   }
 
   el.prev.addEventListener('click', () => go(-1));
@@ -186,19 +207,37 @@
     if (e.key === 'ArrowRight') go(1);
   });
 
-  // Horizontal swipe anywhere on the page.
+  // Horizontal swipe anywhere on the page; the day follows the finger (stiffer where there's no day to go to).
   let touch = null;
   document.addEventListener('touchstart', (e) => {
     const p = e.changedTouches[0];
-    touch = { x: p.clientX, y: p.clientY };
+    touch = { x: p.clientX, y: p.clientY, drag: false };
+  }, { passive: true });
+  document.addEventListener('touchmove', (e) => {
+    if (!touch || REDUCED) return;
+    const p = e.changedTouches[0];
+    const dx = p.clientX - touch.x, dy = p.clientY - touch.y;
+    if (!touch.drag && Math.abs(dx) > 12 && Math.abs(dx) > Math.abs(dy) * 1.5) touch.drag = true;
+    if (!touch.drag) return;
+    const stuck = dx < 0 ? el.next.disabled : el.prev.disabled;
+    const x = dx * (stuck ? 0.15 : 0.6);
+    el.day.style.transition = 'none';
+    el.day.style.transform = `translateX(${x}px) rotate(${x / 60}deg)`;
   }, { passive: true });
   document.addEventListener('touchend', (e) => {
     if (!touch) return;
     const p = e.changedTouches[0];
     const dx = p.clientX - touch.x, dy = p.clientY - touch.y;
+    const { drag } = touch;
     touch = null;
     if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1);
+    else if (drag) springBack();
   }, { passive: true });
+  document.addEventListener('touchcancel', () => { if (touch?.drag) springBack(); touch = null; });
+
+  // Tap the twins to make them wiggle.
+  const badge = document.querySelector('.brand .twins');
+  badge.addEventListener('click', () => { badge.classList.remove('wiggle'); void badge.getBoundingClientRect(); badge.classList.add('wiggle'); });
 
   // Back to the right day when the app is reopened on a later date.
   document.addEventListener('visibilitychange', () => {
@@ -208,7 +247,7 @@
     render();
   });
 
-  load().then(() => setLang(lang)).catch(() => {
+  load().then(() => setLang(lang, true)).catch(() => {
     el.day.innerHTML = `<section class="card missing"><div class="big">⚠️</div><p>${esc(t(TEXT.loadError))}</p>
       <a class="btn" href="${SCHOOL_PAGE}" target="_blank" rel="noopener">${esc(t(TEXT.openPdf))} ↗</a></section>`;
   });

@@ -6,6 +6,7 @@ All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepacha
 ### Changed
 - New look, "Laboratori": the Mellis twins' candy lab from Laboratori Mellis. Twins badge in the header, Fredoka type, chunky outlined cards, one colour per course (starter teal, main orange, side yellow, dessert pink, bread lilac), pink/purple ‹ › buttons, a starry night card for the dinner idea, and the twins cheering on holidays. Light and dark mode; lunch still fits on a 320×568 screen.
 - New CA/ES/EN headings: "Què dinen les mellis?", "I per sopar…", "Festa!" / "A casa!".
+- Animations: on opening, the cards bounce up and the dishes pop in one by one; changing day, the old day flies out and the new one bounces in from that side; a swiped day follows the finger and springs back if the swipe is too short; confetti on holidays; tap the twins to make them wiggle. All off with the phone's reduce-motion setting.
 
 ### Added
 - `designs/`: three look prototypes for the Today screen to compare (A Mercat editorial, B Laboratori with the Mellis twins, C Safata bold tiles) and a comparison page. They load the real data; the live site is unchanged.
