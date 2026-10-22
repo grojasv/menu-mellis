@@ -33,3 +33,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/watch-menu.mjs ${{ inputs.pretend_new && '--pretend-new' || '' }}
+      - name: Diagnose the connection to cide.es
+        if: failure()
+        run: |
+          for u in https://www.cide.es/ https://www.cide.es/espai-migdia-menjadors/; do
+            curl -sS -o /dev/null --max-time 40 -A 'menu-mellis' \
+              -w "$u → %{http_code} ip=%{remote_ip} connect=%{time_connect}s tls=%{time_appconnect}s first-byte=%{time_starttransfer}s total=%{time_total}s\n" "$u" || true
+          done

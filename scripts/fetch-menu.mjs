@@ -12,9 +12,28 @@ import { fileURLToPath } from 'node:url';
 export const PAGE = 'https://www.cide.es/espai-migdia-menjadors/';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
+// fetch with a timeout and a few retries (the school's server can be slow); errors name the URL.
+export async function get(url, tries = 3) {
+  for (let i = 1; ; i++) {
+    const t0 = Date.now();
+    try {
+      const r = await fetch(url, { signal: AbortSignal.timeout(30_000),
+        headers: { 'user-agent': 'menu-mellis (+https://github.com/grojasv/menu-mellis)' } });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const buf = Buffer.from(await r.arrayBuffer());
+      console.error(`GET ${url} → ${r.status}, ${buf.length} bytes, ${Date.now() - t0} ms`);
+      return buf;
+    } catch (e) {
+      const msg = `GET ${url} failed (try ${i}/${tries}, ${Date.now() - t0} ms): ${e.cause?.code || e.name}: ${e.message}`;
+      if (i >= tries) throw new Error(msg);
+      console.error(msg);
+      await new Promise((r) => setTimeout(r, 5_000 * i));
+    }
+  }
+}
+
 export async function findMenuUrl() {
-  const html = await fetch(PAGE, { headers: { 'user-agent': 'menu-mellis (+https://github.com/grojasv/menu-mellis)' } })
-    .then((r) => { if (!r.ok) throw new Error(`${PAGE} → HTTP ${r.status}`); return r.text(); });
+  const html = (await get(PAGE)).toString('utf8');
   const links = [...html.matchAll(/href="([^"]+\.pdf)"/gi)].map((m) => new URL(m[1], PAGE).href);
   const menus = [...new Set(links)].filter((u) => {
     const name = decodeURIComponent(basename(new URL(u).pathname)).toLowerCase();
@@ -37,9 +56,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   if (!existsSync(out)) mkdirSync(out, { recursive: true });
 
   const url = await findMenuUrl();
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`);
-  const buf = Buffer.from(await res.arrayBuffer());
+  const buf = await get(url);
   if (buf.subarray(0, 5).toString() !== '%PDF-') throw new Error(`${url} is not a PDF`);
   const file = join(out, 'menu.pdf');
   writeFileSync(file, buf);

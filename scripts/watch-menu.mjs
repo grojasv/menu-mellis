@@ -7,7 +7,7 @@ import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
 import { appendFileSync } from 'node:fs';
 import { basename } from 'node:path';
-import { PAGE, findMenuUrl, processedIn } from './fetch-menu.mjs';
+import { PAGE, findMenuUrl, get, processedIn } from './fetch-menu.mjs';
 
 const DRY = process.argv.includes('--dry-run');
 const PRETEND = process.argv.includes('--pretend-new');
@@ -19,9 +19,7 @@ const act = (desc, ...args) => { console.log(`${DRY ? '[dry-run] ' : ''}${desc}`
 const summary = (line) => { console.log(line); if (process.env.GITHUB_STEP_SUMMARY) appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${line}\n`); };
 
 const url = await findMenuUrl();
-const res = await fetch(url);
-if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`);
-const buf = Buffer.from(await res.arrayBuffer());
+const buf = await get(url);
 if (buf.subarray(0, 5).toString() !== '%PDF-') throw new Error(`${url} is not a PDF`);
 const sha256 = createHash('sha256').update(buf).digest('hex');
 const done = PRETEND ? null : processedIn(sha256);
