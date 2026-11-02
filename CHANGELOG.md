@@ -2,6 +2,14 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [0.7.0] — 2026-11-02
+### Added
+- "📤 Share the menu" button under the footer (CA/ES/EN): sends the day on screen (date, lunch with emoji, dinner idea and the site link) through the phone's share sheet (WhatsApp, Messages…). Without a share sheet (most desktop browsers) it copies the text instead.
+
+### Changed
+- Bigger CA / ES / EN buttons at the top (44×40 px, 16 px text), easier to tap. Still fit a 320 px-wide screen.
+- `/update-menu` commits and pushes without asking; it still stops for new/dropped menus or unclear data.
+
 ## [0.6.0] — 2026-11-02
 ### Added
 - Data: November 2026 menu (`Menu-novembre-2026-1.pdf`), 21 school days (2–30), no holidays. Three days list two mains in one cell, kept as "A o B" (5: lasagne or cannelloni, 18: squid stew or hake-and-squid raoles, 19: chicken thigh baked or grilled).

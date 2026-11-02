@@ -72,11 +72,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
   width: 58px; height: 26px; flex: none;
   background: #fff; border-radius: 999px; border: 2px solid var(--edge); padding: 1px 2px 0;
 }
-.langs { display: flex; gap: 5px; }
+.langs { display: flex; gap: 6px; }
 .langs button {
-  border: 2px solid var(--edge); background: var(--card); border-radius: 12px;
-  padding: 3px 8px; font-size: 13px; font-weight: 700; box-shadow: 0 3px 0 rgb(58 58 92 / 25%);
+  min-width: 44px; min-height: 40px; padding: 0 8px;
+  border: 2px solid var(--edge); background: var(--card); border-radius: 14px;
+  font-size: 16px; font-weight: 700; box-shadow: 0 3px 0 rgb(58 58 92 / 25%);
 }
+.langs button:active { transform: translateY(2px); box-shadow: 0 1px 0 rgb(58 58 92 / 25%); }
 .langs button.active { background: var(--yellow); color: #3a3a5c; }
 
 .daybar {
@@ -226,10 +228,14 @@ main.from-up .card h2 > span:first-child { display: inline-block; animation: wig
 }
 .foot a { color: inherit; }
 
-.install { max-width: 560px; margin: 0 auto; padding: 0 16px calc(24px + env(safe-area-inset-bottom)); text-align: center; }
-.install[hidden], .install-help[hidden] { display: none; }
-.install-btn { background: var(--purple); font: inherit; font-weight: 700; cursor: pointer; }
-.install-btn:active { transform: translateY(3px); box-shadow: 0 2px 0 rgb(58 58 92 / 25%); }
+.actions { max-width: 560px; margin: 0 auto; padding: 0 16px calc(24px + env(safe-area-inset-bottom)); text-align: center; }
+.actions .row { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.actions [hidden], .install-help[hidden] { display: none; }
+.actions .btn { font: inherit; font-weight: 700; cursor: pointer; }
+.actions .btn:active { transform: translateY(3px); box-shadow: 0 2px 0 rgb(58 58 92 / 25%); }
+.share-btn { background: var(--pink); }
+.install-btn { background: var(--purple); }
+.share-done { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 .install-help { margin: 12px auto 0; max-width: 340px; font-size: 14px; color: var(--muted); }
 
 @media (prefers-reduced-motion: reduce) {

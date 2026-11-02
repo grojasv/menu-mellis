@@ -27,6 +27,9 @@
     installIos: { ca: 'A l’iPhone: toca Compartir ⬆︎ i després «Afegeix a la pantalla d’inici».',
       es: 'En el iPhone: toca Compartir ⬆︎ y luego «Añadir a pantalla de inicio».',
       en: 'On iPhone: tap Share ⬆︎, then “Add to Home Screen”.' },
+    share: { ca: 'Comparteix el menú', es: 'Comparte el menú', en: 'Share the menu' },
+    shareDinner: { ca: 'Per sopar', es: 'Para cenar', en: 'For dinner' },
+    copied: { ca: 'Menú copiat! Enganxa’l on vulguis.', es: '¡Menú copiado! Pégalo donde quieras.', en: 'Menu copied! Paste it anywhere.' },
     installOther: { ca: 'Obre el menú del navegador (⋮) i tria «Instal·la l’aplicació» o «Afegeix a la pantalla d’inici».',
       es: 'Abre el menú del navegador (⋮) y elige «Instalar aplicación» o «Añadir a pantalla de inicio».',
       en: 'Open the browser menu (⋮) and choose “Install app” or “Add to Home screen”.' },
@@ -54,6 +57,7 @@
 
   const $ = (id) => document.getElementById(id);
   const el = { day: $('day'), date: $('date'), rel: $('rel'), prev: $('prev'), next: $('next'), foot: $('foot') };
+  const share = { btn: $('shareBtn'), done: $('shareDone') };
 
   let days = [];      // sorted [{ key, day, source }]
   let variantName = null; // { ca, es, en } from data/variants.json
@@ -137,6 +141,7 @@
         <p>${esc(t(TEXT.missing))}</p>
         <a class="btn" href="${SCHOOL_PAGE}" target="_blank" rel="noopener">${esc(t(TEXT.openPdf))} ↗</a></section>`;
       el.foot.innerHTML = '';
+      share.btn.hidden = true;
     } else {
       const { key, day, source } = entry;
       const diff = daysBetween(today, key);
@@ -160,7 +165,9 @@
       }
       el.day.innerHTML = html;
       el.foot.innerHTML = `${esc(t(variantName))} · <a href="${source.url}" target="_blank" rel="noopener">${esc(t(TEXT.pdf))} ↗</a>`;
+      share.btn.hidden = false;
     }
+    share.done.hidden = true;
 
     if (dir) animateIn(dir === 'up' ? 'from-up' : dir > 0 ? 'from-r' : 'from-l');
   }
@@ -251,21 +258,43 @@
   // (and in browsers without the event) the button shows how to add it by hand. Hidden inside the installed app.
   const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-  const inst = { box: $('install'), btn: $('installBtn'), help: $('installHelp') };
+  const inst = { btn: $('installBtn'), help: $('installHelp') };
   let installEvent = null;
   function renderInstall() {
-    inst.box.hidden = standalone;
+    inst.btn.hidden = standalone;
     inst.btn.textContent = `📲 ${t(TEXT.install)}`;
     inst.help.textContent = t(ios ? TEXT.installIos : TEXT.installOther);
+    share.btn.textContent = `📤 ${t(TEXT.share)}`;
+    share.done.textContent = t(TEXT.copied);
   }
   window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installEvent = e; });
-  window.addEventListener('appinstalled', () => { inst.box.hidden = true; });
+  window.addEventListener('appinstalled', () => { inst.btn.hidden = true; inst.help.hidden = true; });
   inst.btn.addEventListener('click', async () => {
     if (!installEvent) { inst.help.hidden = !inst.help.hidden; return; }
     installEvent.prompt();
     const { outcome } = await installEvent.userChoice;
     installEvent = null;
-    if (outcome === 'accepted') inst.box.hidden = true;
+    if (outcome === 'accepted') inst.btn.hidden = true;
+  });
+
+  // Share the day on screen through the phone's share sheet (WhatsApp, Messages…); copy it where there's none.
+  function shareText() {
+    const { day } = days[pos];
+    const lines = [`🍽️ Menú Mellis · ${el.date.textContent}`];
+    if (day.status === 'school') lines.push(...day.courses.map((c) => `${c.emoji} ${t(c.text)}`));
+    else lines.push(t(day.status === 'holiday' ? TEXT.holiday : TEXT.noClasses));
+    if (day.dinner) lines.push('', `🌙 ${t(TEXT.shareDinner)}:`, ...day.dinner.items.map((c) => `${c.emoji} ${t(c.text)}`));
+    return lines.join('\n');
+  }
+  share.btn.addEventListener('click', async () => {
+    if (!days[pos]) return;
+    const text = shareText();
+    const url = location.origin + location.pathname;
+    if (navigator.share) {
+      try { await navigator.share({ title: 'Menú Mellis', text, url }); } catch { /* closed the share sheet */ }
+      return;
+    }
+    try { await navigator.clipboard.writeText(`${text}\n\n${url}`); share.done.hidden = false; } catch { /* no clipboard */ }
   });
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => { /* offline cache is optional */ });
 

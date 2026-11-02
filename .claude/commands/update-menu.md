@@ -44,6 +44,7 @@ Read each `pNN.pdf` and look at the page image; don't parse the extracted text (
 ## 6. Publish
 - `CHANGELOG.md`: patch version, "Data: <month> menu (<PDF filename>)" + anything notable (ES/CA disagreements,
   new dishes, mid-month changes).
-- Show Guille a short summary (month, days, holidays/no-class days, disagreements, anything odd) and **ask before
-  committing**. Then commit (repo git config, noreply email) and push.
+- Commit (repo git config, noreply email) and push without asking (Guille's call, November 2026); then show Guille
+  a short summary (month, days, holidays/no-class days, disagreements, anything odd). Questions about new or
+  dropped menus or unclear data still stop the run before this step.
 - Close the open `menu-pdf` issue with a comment linking the commit.
