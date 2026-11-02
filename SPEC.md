@@ -12,7 +12,7 @@ Refined with Guille on 2026-10-22.
 | Audience | Our family. Public GitHub Pages site, but tuned for us. |
 | Repo | New repo `grojasv/menu-mellis` → `https://grojasv.github.io/menu-mellis/` |
 | Main view | **Today** card first; swipe / arrows for next & previous school day. Weekend opens on Monday. |
-| Variants | All 16 menus. First visit asks "which menu?"; choice remembered in `localStorage`. |
+| Variants | **Only the general menu** (since 0.6.0, Nov 2026: the PDF went from 15 to 22 menus; Guille chose to keep it simple). No picker. |
 | Languages | CA / ES / EN with flag buttons (as in Laboratorio Mellis), remembered. |
 | Extras v1 | Dinner suggestion · afternoon snack (berenar) · add to home screen (PWA, offline). |
 | Not in v1 | Allergen icons (numbers kept in the data for later). |
@@ -50,8 +50,8 @@ Run by Claude Code on the Mac, using Guille's normal Claude subscription. Steps:
 2. Split into single-page PDFs (`pypdf`, via `uv run --with pypdf` so nothing is installed globally) — the
    Read tool needs ≤10 pages per file and the Mac has no `pdftoppm`. Proven: a single page reads as a clean image
    with the day grid intact.
-3. Claude reads each page and maps it to one of the **16 canonical variants** (table below). Pages are identified
-   by title, not position. Unknown or missing variant → **stop and report**, don't guess.
+3. Claude finds the general menu's CA and ES pages by title (not position) and ignores the rest. Missing → **stop
+   and report**, don't guess.
 4. Write `data/YYYY-MM.json` (schema below). CA is the source; ES comes from page 2 for the general menu and is
    translated for the other variants; EN is always translated. Keep dish names local where natural
    ("Tumbet", "Sopes mallorquines", "Trempó").
@@ -60,7 +60,7 @@ Run by Claude Code on the Mac, using Guille's normal Claude subscription. Steps:
 6. Show Guille a short diff summary (days/dishes changed vs the previous version), then commit
    (noreply email) + push, close the watcher issue.
 
-### Canonical variants (stable ids — never rename)
+### Canonical variants (until 0.5.0; only `general` is published since 0.6.0)
 | id | PDF title |
 |---|---|
 | `general` | MENÚ AMB PROPOSTES DE SOPARS (p1 CA / p2 ES) |
@@ -146,12 +146,9 @@ Re-check when "Berenars-2027-28.pdf" appears.
    updated if the PDF is replaced again; leftover issues closed once the PDF is processed. Since 0.3.1 it compares
    the PDF **link** only: cide.es blocks GitHub runners after their first request, so the PDF itself can't be
    downloaded there. A PDF replaced under the same filename isn't detected (so far changes came as new files).
-4. PWA ✅ (0.5.0: install button, manifest, icons, network-first service worker) + stale banner + berenars + variant picker. Service worker network-first for all of `data/*.json`
+4. PWA ✅ (0.5.0: install button, manifest, icons, network-first service worker) + stale banner + berenars. Service worker network-first for all of `data/*.json`
    (incl. `variants.json`); load only the current month and its neighbours instead of every month in `index.json`.
-5. First real run on the November PDF.
+5. ✅ First real run on the November PDF (0.6.0): diet menus dropped, general menu only.
 
 ## Open questions
-- Which variant(s) do the twins use? (Pre-select it.)
-- Dinner fallback for variants without a dinner suggestion: **implemented in 0.2.0** as the general menu's dinner
-  with a "From the general menu" label (none for the puréed menu). Pending Guille's OK.
 - Should the Today card also show tomorrow's first dish as a teaser at night (after ~18:00)?

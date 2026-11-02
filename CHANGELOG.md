@@ -2,6 +2,14 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [0.6.0] — 2026-11-02
+### Added
+- Data: November 2026 menu (`Menu-novembre-2026-1.pdf`), 21 school days (2–30), no holidays. Three days list two mains in one cell, kept as "A o B" (5: lasagne or cannelloni, 18: squid stew or hake-and-squid raoles, 19: chicken thigh baked or grilled).
+- ES/CA disagreements (CA followed): 16 Nov rice has allergen (9) only on the ES page; 27 Nov spaghetti is "integrales" only in ES and the ES salad has maize instead of green pepper. Fixed typos: "cosolanes", "tomàtigai", "calanbaza", "Crma", "coliclor", "aguacata".
+
+### Removed
+- All menus except the general one. The November PDF reorganised the diet menus (15 → 22, renumbered); only the general menu is published from now on. `data/variants.json` lists just `general`, October's diet data is gone (in git history), and `/update-menu` reads only the general CA/ES pages. Old `?menu=<id>` links show the general menu.
+
 ## [0.5.0] — 2026-10-22
 ### Added
 - Install as an app: "📲 Install the app" button under the footer (CA/ES/EN). On Android/Chrome/Edge it opens the browser's install prompt; on iPhone (and browsers without a prompt) it shows how to add it by hand (Share → Add to Home Screen). Hidden when already opened as the installed app.

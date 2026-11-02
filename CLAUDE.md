@@ -5,14 +5,15 @@ Phone-first page with the CIDE school lunch for today (+ dinner idea), from the 
 ## Data
 Update flow: the daily Action `.github/workflows/watch-menu.yml` (`scripts/watch-menu.mjs`) opens a `menu-pdf` issue when the school's page links a menu PDF the site doesn't have (it compares the link with `source.url` and never downloads the PDF: cide.es blocks GitHub's servers after one request) → Guille runs `/update-menu` (`.claude/commands/update-menu.md`), which closes it. Pipeline: `scripts/fetch-menu.mjs` → `scripts/split-pdf.py` → Claude writes `data/src/YYYY-MM.json` → `scripts/build-month.mjs` → `scripts/validate.mjs`.
 
-- `data/variants.json`: the canonical menus (id, PDF title, name in CA/ES/EN). Ids are fixed slugs; never rename one (phones remember them). A new or dropped menu in the PDF is a decision for Guille.
-- `data/src/YYYY-MM.json`: **the source of truth, written by Claude from the PDF**. The general menu in full, every other variant as differences from a `base` (format at the top of `scripts/build-month.mjs`). Review data changes here.
+- **Only the general menu is published** (decided by Guille, November 2026). The PDF's other pages (Petit CIDE, diets, allergies…) are ignored; their October data is in git history (≤ 0.5.0).
+- `data/variants.json`: just `general` (PDF titles CA/ES, name in CA/ES/EN). The variant machinery in `build-month.mjs`/the app stays but is unused; `?menu=<anything>` shows the general menu.
+- `data/src/YYYY-MM.json`: **the source of truth, written by Claude from the PDF**: the general menu in full (format at the top of `scripts/build-month.mjs`). Review data changes here.
 - `data/YYYY-MM.json`: generated (minified), what the app loads. Never edit by hand.
   - `source`: `{ url, sha256, processedAt }` of the PDF it came from (the watcher compares `url`; `/update-menu` compares `sha256`).
   - `variants.<id>.days["YYYY-MM-DD"]`: `{ status, courses, dinner }`
     - `status`: `school` | `holiday` (FESTIU) | `no-classes` (CLASSES SUSPESES). Non-school days have `courses: []`.
-    - `courses[]`: `{ role: first|second|side|dessert|bread, emoji, text: {ca,es,en}, allergens: [1–14], note?, changed? }`. `note` = diabetic portions (`3R: 195 g …`). `changed` (non-general variants) = differs from the general menu's course.
-    - `dinner`: `{ items: [{ emoji, text, allergens }], fromGeneral }` or `null`. Diet menus without their own dinner idea show the general one (`fromGeneral: true`); the puréed menu has none.
+    - `courses[]`: `{ role: first|second|side|dessert, emoji, text: {ca,es,en}, allergens: [1–14] }`. Two dishes in one cell ("Lassanya … / Canelons …") become one course "A o B" with both dishes' allergens.
+    - `dinner`: `{ items: [{ emoji, text, allergens }], fromGeneral: false }` or `null`.
 - `data/index.json` → `{ "months": ["2026-10", …] }`, sorted, maintained by the build.
 - **CA is the source.** ES comes from the ES page when it matches CA; when the two pages disagree, follow CA and translate. EN is always translated. Keep local dish names (arròs brut, tumbet, trempó, sopes mallorquines, raoles) and explain them briefly in EN. Fix obvious typos (`910` → `9,10`, "hamburguesa se soja" → "de soja").
 - Allergen numbers are kept but not shown yet.

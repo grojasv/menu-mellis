@@ -3,7 +3,7 @@
   const DATA = 'data/';
   const LANGS = ['ca', 'es', 'en'];
   const LOCALE = { ca: 'ca-ES', es: 'es-ES', en: 'en-GB' };
-  // Variant picker comes later (spec step 4); until then ?menu=<id> (ids in data/variants.json) switches it.
+  // Only the general menu is published since 0.6.0; ?menu=<id> still picks a variant if one exists in the data.
   const VARIANT = new URLSearchParams(location.search).get('menu') || 'general';
   const SCHOOL_PAGE = 'https://www.cide.es/espai-migdia-menjadors/';
   const TZ = 'Europe/Madrid';

@@ -1,0 +1,961 @@
+{
+ "month": "2026-11",
+ "source": {
+  "url": "https://www.cide.es/wp-content/uploads/2026/09/Menu-novembre-2026-1.pdf",
+  "sha256": "3de32f8656899d4ac06bc3b72ec6d7b45b49185604f15d49dadf05f8d88cea89",
+  "processedAt": "2026-11-02T12:00:00+01:00"
+ },
+ "general": {
+  "2026-11-02": {
+   "lunch": {
+    "first": {
+     "ca": "Crema de carabassa",
+     "es": "Crema de calabaza",
+     "en": "Pumpkin soup"
+    },
+    "second": {
+     "ca": "Pitrera de pollastre a la planxa",
+     "es": "Pechuga de pollo a la plancha",
+     "en": "Grilled chicken breast"
+    },
+    "side": {
+     "ca": "Patates al vapor",
+     "es": "Patatas al vapor",
+     "en": "Steamed potatoes"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Wok de verdures (ceba, pebre vermell, pastanaga i bròquil) amb espaguetis integrals, daus de salmó i salsa de soja",
+     "es": "Wok de verduras (cebolla, pimiento rojo, zanahoria y brócoli) con espaguetis integrales, dados de salmón y salsa de soja",
+     "en": "Vegetable stir-fry (onion, red pepper, carrot and broccoli) with wholemeal spaghetti, salmon cubes and soy sauce",
+     "emoji": "🥡"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-03": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de llenties amb verdures",
+     "es": "Potaje de lentejas con verduras",
+     "en": "Lentil and vegetable stew"
+    },
+    "second": {
+     "ca": "Lluç arrebossat casolà",
+     "es": "Merluza empanada casera",
+     "en": "Homemade breaded hake",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, pastanaga i cogombre",
+     "es": "Ensalada de lechuga, zanahoria y pepino",
+     "en": "Lettuce, carrot and cucumber salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Pastís de verdures acompanyat de patata rostida",
+     "es": "Pastel de verduras acompañado de patata asada",
+     "en": "Vegetable bake with roast potato"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-04": {
+   "lunch": {
+    "first": {
+     "ca": "Arròs integral bullit amb salsa de tomàtiga",
+     "es": "Arroz integral hervido con salsa de tomate",
+     "en": "Boiled brown rice with tomato sauce"
+    },
+    "second": {
+     "ca": "Truita de patates amb ceba",
+     "es": "Tortilla de patatas con cebolla",
+     "en": "Potato and onion omelette (Spanish tortilla)",
+     "a": [
+      3
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, tomàtiga i pinya",
+     "es": "Ensalada de lechuga, tomate y piña",
+     "en": "Lettuce, tomato and pineapple salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Saltejat de verdures i pollastre amb quinoa",
+     "es": "Salteado de verduras y pollo con quinoa",
+     "en": "Stir-fried vegetables and chicken with quinoa"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-05": {
+   "lunch": {
+    "first": {
+     "ca": "Ensalada de lletuga, tomàtiga, pastanaga i blat de les índies",
+     "es": "Ensalada de lechuga, tomate, zanahoria y maíz",
+     "en": "Lettuce, tomato, carrot and sweetcorn salad"
+    },
+    "second": {
+     "ca": "Lassanya casolana de pollastre i porc o canelons de pollastre i porc",
+     "es": "Lasaña casera de pollo y cerdo o canelones de pollo y cerdo",
+     "en": "Homemade chicken and pork lasagne or chicken and pork cannelloni",
+     "a": [
+      1,
+      3,
+      6,
+      7,
+      9
+     ]
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Crema de colflori i patata",
+     "es": "Crema de coliflor y patata",
+     "en": "Cauliflower and potato soup"
+    },
+    {
+     "ca": "Truita a la francesa",
+     "es": "Tortilla a la francesa",
+     "en": "Plain omelette"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-06": {
+   "lunch": {
+    "first": {
+     "ca": "Crema de ciurons i verdures",
+     "es": "Crema de garbanzos y verduras",
+     "en": "Chickpea and vegetable soup"
+    },
+    "second": {
+     "ca": "Lluç a la planxa",
+     "es": "Merluza a la plancha",
+     "en": "Grilled hake",
+     "a": [
+      4
+     ]
+    },
+    "side": {
+     "ca": "Arròs bullit",
+     "es": "Arroz hervido",
+     "en": "Boiled rice"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Tomàtigues cherry trempades amb herbes provençals",
+     "es": "Tomates cherry aliñados con hierbas provenzales",
+     "en": "Cherry tomatoes dressed with herbes de Provence",
+     "emoji": "🍅"
+    },
+    {
+     "ca": "Pizza casolana de formatge i cuixot dolç",
+     "es": "Pizza casera de queso y jamón york",
+     "en": "Homemade cheese and ham pizza",
+     "emoji": "🍕"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-09": {
+   "lunch": {
+    "first": {
+     "ca": "Crema de carabassó i porro amb crostons al forn",
+     "es": "Crema de calabacín y puerro con crostones al horno",
+     "en": "Courgette and leek soup with baked croutons",
+     "a": [
+      1
+     ]
+    },
+    "second": {
+     "ca": "Pitrera de pollastre a la planxa amb salsa de ceba",
+     "es": "Pechuga de pollo a la plancha con salsa de cebolla",
+     "en": "Grilled chicken breast with onion sauce"
+    },
+    "side": {
+     "ca": "Patates al vapor",
+     "es": "Patatas al vapor",
+     "en": "Steamed potatoes"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Ous remenats amb xampinyons acompanyat de tomàtigues cherry i arròs bullit",
+     "es": "Revuelto de huevo con champiñones acompañado de tomates cherry y arroz hervido",
+     "en": "Scrambled eggs with mushrooms, cherry tomatoes and boiled rice"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-10": {
+   "lunch": {
+    "first": {
+     "ca": "Ciurons amb tomàtiga",
+     "es": "Garbanzos con tomate",
+     "en": "Chickpeas with tomato",
+     "emoji": "🫘"
+    },
+    "second": {
+     "ca": "Salmó al forn amb all i julivert",
+     "es": "Salmón al horno con ajo y perejil",
+     "en": "Oven-baked salmon with garlic and parsley",
+     "a": [
+      4
+     ]
+    },
+    "side": {
+     "ca": "Arròs pilaf",
+     "es": "Arroz pilaf",
+     "en": "Rice pilaf"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Sopa de verdures amb pasta integral",
+     "es": "Sopa de verduras con pasta integral",
+     "en": "Vegetable soup with wholemeal pasta"
+    },
+    {
+     "ca": "Pitrera d'indiot a la planxa",
+     "es": "Pechuga de pavo a la plancha",
+     "en": "Grilled turkey breast"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-11": {
+   "lunch": {
+    "first": {
+     "ca": "Espaguetis integrals amb salsa de tomàtiga i verdures",
+     "es": "Espaguetis integrales con salsa de tomate y verduras",
+     "en": "Wholemeal spaghetti with tomato and vegetable sauce",
+     "a": [
+      1,
+      3
+     ]
+    },
+    "second": {
+     "ca": "Truita de patates amb ceba",
+     "es": "Tortilla de patatas con cebolla",
+     "en": "Potato and onion omelette (Spanish tortilla)",
+     "a": [
+      3
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, blat de les índies i olives verdes",
+     "es": "Ensalada de lechuga, maíz y aceitunas verdes",
+     "en": "Lettuce, sweetcorn and green olive salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Crema de verdures",
+     "es": "Crema de verduras",
+     "en": "Vegetable soup"
+    },
+    {
+     "ca": "Sardines a la planxa",
+     "es": "Sardinas a la plancha",
+     "en": "Grilled sardines",
+     "emoji": "🐟"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-12": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de llenties amb verdures",
+     "es": "Potaje de lentejas con verduras",
+     "en": "Lentil and vegetable stew"
+    },
+    "second": {
+     "ca": "Llom arrebossat casolà",
+     "es": "Lomo empanado casero",
+     "en": "Homemade breaded pork loin",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, cogombre i blat de les índies",
+     "es": "Ensalada de lechuga, pepino y maíz",
+     "en": "Lettuce, cucumber and sweetcorn salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Salmó al papillot amb verdures (porro i pastanaga) amb patata",
+     "es": "Salmón al papillote con verduras (puerro y zanahoria) con patata",
+     "en": "Salmon en papillote with vegetables (leek and carrot) and potato"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-13": {
+   "lunch": {
+    "first": {
+     "ca": "Arròs brut (pollastre i verdures)",
+     "es": "Arroz brut (pollo y verduras)",
+     "en": "Arròs brut: Mallorcan rice stew (chicken and vegetables)"
+    },
+    "second": {
+     "ca": "Lluç a la planxa amb maionesa casolana",
+     "es": "Merluza a la plancha con mahonesa casera",
+     "en": "Grilled hake with homemade mayonnaise",
+     "a": [
+      4,
+      7
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, ceba i pebre verd",
+     "es": "Ensalada de lechuga, cebolla y pimiento verde",
+     "en": "Lettuce, onion and green pepper salad"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Crema de carabassa",
+     "es": "Crema de calabaza",
+     "en": "Pumpkin soup"
+    },
+    {
+     "ca": "Hamburguesa de soja texturitzada",
+     "es": "Hamburguesa de soja texturizada",
+     "en": "Textured soy burger"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-16": {
+   "lunch": {
+    "first": {
+     "ca": "Arròs de brou de pollastre",
+     "es": "Arroz caldoso de pollo",
+     "en": "Soupy chicken rice"
+    },
+    "second": {
+     "ca": "Truita de patates amb ceba",
+     "es": "Tortilla de patatas con cebolla",
+     "en": "Potato and onion omelette (Spanish tortilla)",
+     "a": [
+      3
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, pastanaga i olives verdes",
+     "es": "Ensalada de lechuga, zanahoria y aceitunas verdes",
+     "en": "Lettuce, carrot and green olive salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Sopa de verdures amb pasta integral",
+     "es": "Sopa de verduras con pasta integral",
+     "en": "Vegetable soup with wholemeal pasta"
+    },
+    {
+     "ca": "Rellom de pollastre a la planxa",
+     "es": "Solomillo de pollo a la plancha",
+     "en": "Grilled chicken tenderloin",
+     "emoji": "🍗"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-17": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de llenties amb verdures",
+     "es": "Potaje de lentejas con verduras",
+     "en": "Lentil and vegetable stew"
+    },
+    "second": {
+     "ca": "Pitrera de pollastre a la planxa",
+     "es": "Pechuga de pollo a la plancha",
+     "en": "Grilled chicken breast"
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, ceba vermella i formatge fresc",
+     "es": "Ensalada de lechuga, cebolla roja y queso fresco",
+     "en": "Lettuce, red onion and fresh cheese salad",
+     "a": [
+      7
+     ]
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Bullit de rap (amb patata, mongetes tendres, pastanaga i bròquil)",
+     "es": "Bullit de rape (con patata, judías tiernas, zanahoria y brócoli)",
+     "en": "Bullit de rap: boiled monkfish with potato, green beans, carrot and broccoli"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-18": {
+   "lunch": {
+    "first": {
+     "ca": "Crema de carabassó i porro",
+     "es": "Crema de calabacín y puerro",
+     "en": "Courgette and leek soup"
+    },
+    "second": {
+     "ca": "Aguiat de calamar amb ceba o raoles casolanes de lluç i calamar",
+     "es": "Guiso de calamar con cebolla o raolas caseras de merluza y calamar",
+     "en": "Squid and onion stew, or homemade hake and squid raoles (Mallorcan fritters)",
+     "a": [
+      1,
+      3,
+      4,
+      14
+     ],
+     "emoji": "🦑"
+    },
+    "side": {
+     "ca": "Arròs pilaf",
+     "es": "Arroz pilaf",
+     "en": "Rice pilaf"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Wrap amb truita, tomàtiga, ensalada i alvocat",
+     "es": "Wrap con tortilla, tomate, ensalada y aguacate",
+     "en": "Wrap with omelette, tomato, salad and avocado"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-19": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de ciurons amb verdures",
+     "es": "Potaje de garbanzos con verduras",
+     "en": "Chickpea and vegetable stew"
+    },
+    "second": {
+     "ca": "Contracuixa de pollastre al forn o a la planxa",
+     "es": "Contramuslo de pollo al horno o a la plancha",
+     "en": "Baked or grilled chicken thigh",
+     "emoji": "🍗"
+    },
+    "side": {
+     "ca": "Patates fregides",
+     "es": "Patatas fritas",
+     "en": "Chips (French fries)",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+     ]
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Pastís de lluç i verdures acompanyat de moniato rostit",
+     "es": "Pastel de merluza y verduras acompañado de boniato asado",
+     "en": "Hake and vegetable bake with roast sweet potato",
+     "emoji": "🐟"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-20": {
+   "lunch": {
+    "first": {
+     "ca": "Macarrons integrals a la bolonyesa",
+     "es": "Macarrones integrales a la boloñesa",
+     "en": "Wholemeal macaroni bolognese",
+     "a": [
+      1,
+      3
+     ]
+    },
+    "second": {
+     "ca": "Lluç a la planxa",
+     "es": "Merluza a la plancha",
+     "en": "Grilled hake",
+     "a": [
+      4
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, pinya i pebre verd",
+     "es": "Ensalada de lechuga, piña y pimiento verde",
+     "en": "Lettuce, pineapple and green pepper salad"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Crema de verdures",
+     "es": "Crema de verduras",
+     "en": "Vegetable soup"
+    },
+    {
+     "ca": "Ous farcits",
+     "es": "Huevos rellenos",
+     "en": "Stuffed eggs"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-23": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de mongetes blanques amb verdures",
+     "es": "Potaje de alubias blancas con verduras",
+     "en": "White bean and vegetable stew",
+     "emoji": "🫘"
+    },
+    "second": {
+     "ca": "Pitrera de pollastre a la planxa",
+     "es": "Pechuga de pollo a la plancha",
+     "en": "Grilled chicken breast"
+    },
+    "side": {
+     "ca": "Arròs pilaf",
+     "es": "Arroz pilaf",
+     "en": "Rice pilaf"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Truita de patates, colflori i ceba acompanyada d'ensalada de brots tendres, tomàtiga cherry i alvocat",
+     "es": "Tortilla de patatas, coliflor y cebolla acompañada de ensalada de brotes tiernos, tomate cherry y aguacate",
+     "en": "Potato, cauliflower and onion omelette with baby-leaf, cherry tomato and avocado salad"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-24": {
+   "lunch": {
+    "first": {
+     "ca": "Crema de pastanaga i tomàtiga amb crostons al forn",
+     "es": "Crema de zanahoria y tomate con crostones al horno",
+     "en": "Carrot and tomato soup with baked croutons",
+     "a": [
+      1
+     ]
+    },
+    "second": {
+     "ca": "Lluç a la planxa amb maionesa casolana",
+     "es": "Merluza a la plancha con mahonesa casera",
+     "en": "Grilled hake with homemade mayonnaise",
+     "a": [
+      4,
+      7
+     ]
+    },
+    "side": {
+     "ca": "Patates al vapor",
+     "es": "Patatas al vapor",
+     "en": "Steamed potatoes"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Farcellets de col amb arròs i carn capolada de pollastre",
+     "es": "Rollitos de col rellenos de arroz y carne picada de pollo",
+     "en": "Cabbage rolls stuffed with rice and minced chicken",
+     "emoji": "🥬"
+    },
+    {
+     "ca": "Ensalada de lletuga i olives",
+     "es": "Ensalada de lechuga y aceitunas",
+     "en": "Lettuce and olive salad"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-25": {
+   "lunch": {
+    "first": {
+     "ca": "Cuinat de llenties amb verdures",
+     "es": "Potaje de lentejas con verduras",
+     "en": "Lentil and vegetable stew"
+    },
+    "second": {
+     "ca": "Truita de patates amb ceba",
+     "es": "Tortilla de patatas con cebolla",
+     "en": "Potato and onion omelette (Spanish tortilla)",
+     "a": [
+      3
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, tomàtiga i pebre verd",
+     "es": "Ensalada de lechuga, tomate y pimiento verde",
+     "en": "Lettuce, tomato and green pepper salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Espaguetis integrals amb salsa de verdures i gambetes",
+     "es": "Espaguetis integrales con salsa de verduras y gambas",
+     "en": "Wholemeal spaghetti with vegetable and prawn sauce"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-26": {
+   "lunch": {
+    "first": {
+     "ca": "Arròs de brou de peix i marisc",
+     "es": "Arroz caldoso de pescado y marisco",
+     "en": "Soupy fish and seafood rice",
+     "a": [
+      2,
+      4,
+      14
+     ]
+    },
+    "second": {
+     "ca": "Nuggets de pollastre i tires de calamar arrebossades",
+     "es": "Nuggets de pollo y rabas de calamar",
+     "en": "Chicken nuggets and breaded squid strips",
+     "a": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14
+     ],
+     "emoji": "🍗"
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, pastanaga i cogombre",
+     "es": "Ensalada de lechuga, zanahoria y pepino",
+     "en": "Lettuce, carrot and cucumber salad"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Bacallà a la mallorquina (amb espinacs, bledes i patata)",
+     "es": "Bacalao a la mallorquina (con espinacas, acelgas y patata)",
+     "en": "Mallorcan-style cod (with spinach, chard and potato)",
+     "emoji": "🐟"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-27": {
+   "lunch": {
+    "first": {
+     "ca": "Espaguetis amb salsa de tomàtiga i verdures",
+     "es": "Espaguetis con salsa de tomate y verduras",
+     "en": "Spaghetti with tomato and vegetable sauce",
+     "a": [
+      1,
+      3
+     ]
+    },
+    "second": {
+     "ca": "Salmó al forn amb all i julivert",
+     "es": "Salmón al horno con ajo y perejil",
+     "en": "Oven-baked salmon with garlic and parsley",
+     "a": [
+      4
+     ]
+    },
+    "side": {
+     "ca": "Ensalada de lletuga, pinya i pebre verd",
+     "es": "Ensalada de lechuga, piña y pimiento verde",
+     "en": "Lettuce, pineapple and green pepper salad"
+    },
+    "dessert": {
+     "ca": "Iogurt o fruita",
+     "es": "Yogur o fruta",
+     "en": "Yogurt or fruit",
+     "a": [
+      7
+     ]
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Hamburguesa de vedella amb lletuga i tomàtiga acompanyada de patates fregides",
+     "es": "Hamburguesa de ternera con lechuga y tomate acompañada de patatas fritas",
+     "en": "Beef burger with lettuce and tomato, with chips"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  },
+  "2026-11-30": {
+   "lunch": {
+    "first": {
+     "ca": "Crema de carabassa",
+     "es": "Crema de calabaza",
+     "en": "Pumpkin soup"
+    },
+    "second": {
+     "ca": "Pilotes casolanes de vedella i porc",
+     "es": "Albóndigas caseras de ternera y cerdo",
+     "en": "Homemade beef and pork meatballs",
+     "a": [
+      1,
+      3
+     ]
+    },
+    "side": {
+     "ca": "Arròs pilaf",
+     "es": "Arroz pilaf",
+     "en": "Rice pilaf"
+    },
+    "dessert": {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   },
+   "dinner": [
+    {
+     "ca": "Hamburguesa vegetal (amb farina de ciuró, carabassa, ceba i pastanaga) amb lletuga i pa d'hamburguesa",
+     "es": "Hamburguesa vegetal (con harina de garbanzo, calabaza, cebolla y zanahoria) con lechuga y pan de hamburguesa",
+     "en": "Veggie burger (chickpea flour, pumpkin, onion and carrot) with lettuce in a burger bun"
+    },
+    {
+     "ca": "Fruita",
+     "es": "Fruta",
+     "en": "Fruit"
+    }
+   ]
+  }
+ }
+}
