@@ -2,6 +2,10 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [0.7.2] — 2026-11-03
+### Changed
+- Data: November menu now points at the school's revised PDF (`Menu-novembre-2026-2.pdf`). The general menu is unchanged; the only difference on its pages is that the CA page's weekday names are now in Catalan.
+
 ## [0.7.1] — 2026-11-03
 ### Changed
 - The **Watch CIDE menu** Action runs only on the first 3 and last 3 days of each month (05:00 UTC) instead of every day; the manual run still works any day.
