@@ -2,6 +2,10 @@
 
 All notable changes to Menú Mellis. Format: [Keep a Changelog](https://keepachangelog.com/), versions: [SemVer](https://semver.org/). New feature = minor, fix or monthly data = patch.
 
+## [0.7.1] — 2026-11-03
+### Changed
+- The **Watch CIDE menu** Action runs only on the first 3 and last 3 days of each month (05:00 UTC) instead of every day; the manual run still works any day.
+
 ## [0.7.0] — 2026-11-02
 ### Added
 - "📤 Share the menu" button under the footer (CA/ES/EN): sends the day on screen (date, lunch with emoji, dinner idea and the site link) through the phone's share sheet (WhatsApp, Messages…). Without a share sheet (most desktop browsers) it copies the text instead.

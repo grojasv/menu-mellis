@@ -1,11 +1,13 @@
 name: Watch CIDE menu
 
-# Every morning: does the school page link a menu PDF the site doesn't have? (Link only: cide.es blocks GitHub
+# First 3 and last 3 days of each month, every morning: does the school page link a menu PDF the site doesn't have? (Link only: cide.es blocks GitHub
 # runners after one request, so the PDF itself is downloaded later by /update-menu on the Mac.) If so, open an issue (assigned to Guille) asking to
 # run /update-menu in Claude Code. No API key here: Claude reads the PDF on Guille's Mac.
 on:
   schedule:
-    - cron: '0 5 * * *' # 06:00 CET / 07:00 CEST, every day (new months can appear at weekends)
+    # 06:00 CET / 07:00 CEST on days 1-3 and 26-31; the "Month edges only" step skips 26-28 when they aren't among
+    # the last 3 days (cron can't say "last 3 days"). New menus come out around the turn of the month.
+    - cron: '0 5 1-3,26-31 * *'
   workflow_dispatch:
     inputs:
       pretend_new:
@@ -26,11 +28,22 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - name: Month edges only
+        id: edge
+        run: |
+          if [ "${{ github.event_name }}" != schedule ] || [ "$(date -u +%-d)" -le 3 ] || [ "$(date -u -d '+3 days' +%-d)" -le 3 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Not one of the first or last 3 days of the month: nothing to do."
+          fi
       - uses: actions/checkout@v4
+        if: steps.edge.outputs.run
       - uses: actions/setup-node@v4
+        if: steps.edge.outputs.run
         with:
           node-version: 22
       - name: Check the menu PDF
+        if: steps.edge.outputs.run
         env:
           GH_TOKEN: ${{ github.token }}
         run: node scripts/watch-menu.mjs ${{ inputs.pretend_new && '--pretend-new' || '' }}

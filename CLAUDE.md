@@ -3,7 +3,7 @@
 Phone-first page with the CIDE school lunch for today (+ dinner idea), from the monthly menu PDF. Plain HTML/CSS/JS, no build step, GitHub Pages under `/menu-mellis/` (relative paths only). Plan and roadmap: `SPEC.md`.
 
 ## Data
-Update flow: the daily Action `.github/workflows/watch-menu.yml` (`scripts/watch-menu.mjs`) opens a `menu-pdf` issue when the school's page links a menu PDF the site doesn't have (it compares the link with `source.url` and never downloads the PDF: cide.es blocks GitHub's servers after one request) → Guille runs `/update-menu` (`.claude/commands/update-menu.md`), which closes it. Pipeline: `scripts/fetch-menu.mjs` → `scripts/split-pdf.py` → Claude writes `data/src/YYYY-MM.json` → `scripts/build-month.mjs` → `scripts/validate.mjs`.
+Update flow: the Action `.github/workflows/watch-menu.yml` (`scripts/watch-menu.mjs`, first 3 and last 3 days of each month) opens a `menu-pdf` issue when the school's page links a menu PDF the site doesn't have (it compares the link with `source.url` and never downloads the PDF: cide.es blocks GitHub's servers after one request) → Guille runs `/update-menu` (`.claude/commands/update-menu.md`), which closes it. Pipeline: `scripts/fetch-menu.mjs` → `scripts/split-pdf.py` → Claude writes `data/src/YYYY-MM.json` → `scripts/build-month.mjs` → `scripts/validate.mjs`.
 
 - **Only the general menu is published** (decided by Guille, November 2026). The PDF's other pages (Petit CIDE, diets, allergies…) are ignored; their October data is in git history (≤ 0.5.0).
 - `data/variants.json`: just `general` (PDF titles CA/ES, name in CA/ES/EN). The variant machinery in `build-month.mjs`/the app stays but is unused; `?menu=<anything>` shows the general menu.
